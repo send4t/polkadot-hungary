@@ -82,12 +82,12 @@ function Home({
          />
          <Nav />
          <main>
-            <SimpleGrid px={30} py={20}>
+            <SimpleGrid px={32} py={20}>
                <Box>
                   <Heading as="h1" size={{ base: '2xl', md: '4xl' }}>
-                     Benvenuto in
+                     Üdvözöl
                      <br />
-                     Polkadot Arena
+                     a Polkadot Hungary
                   </Heading>
                   <Box pt={3}>
                      <Text>

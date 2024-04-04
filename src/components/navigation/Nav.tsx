@@ -51,7 +51,7 @@ export default function Nav() {
    const { isOpen, onOpen, onClose } = useDisclosure()
    return (
       <header>
-         <Box bg={useColorModeValue('gray.100', 'gray.900')} px={30} py={1}>
+         <Box bg={useColorModeValue('gray.100', 'gray.900')} px={32} py={1}>
             <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                <IconButton
                   size={'md'}
@@ -64,6 +64,7 @@ export default function Nav() {
                   <Box>
                      <Link href="/">
                         <Image
+                            boxSize='42px'
                            src={useColorModeValue('/logo-bk.svg', '/logo.svg')}
                            alt="logo"
                         />
