@@ -74,10 +74,10 @@ function Home({
    return (
       <>
          <HeadSEO
-            titlePage={'Polkadot Arena, benvenuti!'}
+            titlePage={'Polkadot Hungary Community'}
             imagePage={'poster.png'}
             summaryPage={
-               'Dal mondo Polkadot e Kusama un blog in italiano con news, aggiornamenti, alpha, rumors e traduzioni'
+               'Egy oldal magyarul a Polkadotról és Kusamaról, hírekkel, frissítésekkel, pletykákkal, videókkal és fordításokkal.'
             }
          />
          <Nav />
@@ -91,7 +91,7 @@ function Home({
                   </Heading>
                   <Box pt={3}>
                      <Text>
-                        Dal mondo Polkadot e Kusama un blog in italiano con news, aggiornamenti, alpha, rumors, video e traduzioni
+                      Egy oldal magyarul a Polkadotról és Kusamaról, hírekkel, frissítésekkel, pletykákkal, videókkal és fordításokkal.
                      </Text>
                   </Box>
                </Box>
@@ -124,7 +124,7 @@ function Home({
                   pt={6}
                >
                   <Heading as="h2" fontSize="l" pb={6}>
-                     Le news di Polkadot in italiano
+                     A Polkadot hírei magyarul
                   </Heading>
                   <Box>
                      <SimpleGrid columns={{ base: 2, md: 3 }} spacing={6}>
@@ -136,7 +136,7 @@ function Home({
                   <Center py={6}>
                      <Button colorScheme="teal" variant="solid">
                         <Link href="/news">
-                           <a>Tutti gli articoli</a>
+                           <a>Összes cikk</a>
                         </Link>
                      </Button>
                   </Center>
@@ -150,7 +150,7 @@ function Home({
                >
                   <Box pb={6}>
                      <Tags
-                        text={'Raccolte di articoli'}
+                        text={'Cikkek gyűjteménye'}
                         projects={collectionsTag}
                      />
                   </Box>
@@ -161,7 +161,7 @@ function Home({
                      bg={backgroundBox}
                   >
                      <Heading as="h2" fontSize="l" pb={6}>
-                        In evidenza
+                        Kiemelt cikkek
                      </Heading>
                      <CardComponent
                         {...(highPostHome as ITcard)}
@@ -180,8 +180,7 @@ function Home({
                   pt={6}
                >
                   <Heading as="h2" fontSize="l" pb={6}>
-                     I progetti dell&apos;ecosistema Polkadot e Kusama dal team
-                     Polkadot Arena
+                  A Polkadot és Kusama ökoszisztéma projektjei a Polkadot Hungary Community csapatától.
                   </Heading>
                   <Box>
                      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
@@ -193,7 +192,7 @@ function Home({
                   <Center py={6}>
                      <Button colorScheme="teal" variant="solid">
                         <Link href="/news">
-                           <a>Tutti gli articoli del blog</a>
+                           <a>A blog összes cikke</a>
                         </Link>
                      </Button>
                   </Center>
@@ -205,7 +204,7 @@ function Home({
                   pt={6}
                >
                   <Heading as="h2" fontSize="l" pb={6}>
-                     Seguici su Twitter
+                     Kövess minket Twitteren
                   </Heading>
                   <Twitter />
                </GridItem>

@@ -5,7 +5,7 @@ export function Twitter() {
       <Timeline
          dataSource={{
             sourceType: 'profile',
-            screenName: 'PolkadotArena',
+            screenName: 'PolkadotHungary',
          }}
          options={{
             height: '1600',

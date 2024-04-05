@@ -31,16 +31,16 @@ function About({
       <>
          <HeadSEO
             imagePage={'poster.png'}
-            titlePage={'Polkadot Arena'}
+            titlePage={'Polkadot Hungary Community'}
             summaryPage={
-               'Polkadot Arena è un progetto in lingua italiana di divulgazione sull&aposecosistema Polkadot e Kusama, attraverso l&apos;aggregazione in un unico canale di tutti i contenuti realizzati dai membri del collettivo.'
+               'Egy oldal magyarul a Polkadotról és Kusamaról, hírekkel, frissítésekkel, pletykákkal, videókkal és fordításokkal.'
             }
          />
          <Nav />
          <SimpleGrid px={30} py={20}>
             <Box>
                <Heading as="h1" size="4xl">
-                  Polkadot Arena
+                  Polkadot Hungary Community
                </Heading>
             </Box>
          </SimpleGrid>

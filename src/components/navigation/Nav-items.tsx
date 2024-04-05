@@ -4,13 +4,14 @@ import { Tooltip, Link, useColorModeValue } from '@chakra-ui/react'
 let url = '../'
 
 const Links = [
-   { name: 'News', url: 'news', status: '' },
+   { name: 'Hírek', url: 'news', status: '' },
    { name: 'Polkadot', url: 'polkadot', status: '' },
    { name: 'Kusama', url: 'kusama', status: '' },
    // { name: 'DeFi', url:'DeFi', status: ''},
    // { name: 'NFT', url:'NFT', status: ''},
    // { name: 'Area Dev', url:'area-dev', status: ''},
-   { name: 'About', url: 'about', status: '' },
+   { name: 'Rólunk', url: 'about', status: '' },
+   { name: 'Wiki', url: 'wiki', status: '' },
    // { name: 'Community ITA', url: 'community-italiana'}
 ]
 
@@ -65,51 +66,7 @@ export default function NevItems() {
             _hover={{ textDecoration: 'none' }}
             href="#"
          >
-            <Tooltip label="Coming Soon" aria-label="A tooltip">
-               DeFi
-            </Tooltip>
-         </Link>
-         <Link
-            px={3}
-            py={1}
-            rounded={'md'}
-            key="NFT"
-            textColor="gray.700"
-            style={{ textTransform: 'capitalize' }}
-            _hover={{ textDecoration: 'none' }}
-            href="#"
-         >
-            <Tooltip label="Coming Soon" aria-label="A tooltip">
-               NFT
-            </Tooltip>
-         </Link>
-         <Link
-            px={3}
-            py={1}
-            rounded={'md'}
-            key="NFT"
-            textColor="gray.700"
-            style={{ textTransform: 'capitalize' }}
-            _hover={{ textDecoration: 'none' }}
-            href="#"
-         >
-            <Tooltip label="Coming Soon" aria-label="A tooltip">
-               Area Dev
-            </Tooltip>
-         </Link>
-         <Link
-            px={3}
-            py={1}
-            rounded={'md'}
-            key="community"
-            textColor="gray.700"
-            style={{ textTransform: 'capitalize' }}
-            _hover={{ textDecoration: 'none' }}
-            href="#"
-         >
-            <Tooltip label="Coming Soon" aria-label="A tooltip">
-               Community ITA
-            </Tooltip>
+           
          </Link>
       </>
    )

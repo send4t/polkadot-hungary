@@ -65,7 +65,7 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                >
                   <Box pb={6}>
                      <Heading as="h2" fontSize="l" pb={6}>
-                        Link Ufficiali
+                        Hivatalos linkek
                      </Heading>
                      <UnorderedList>
                         <ListItem>
@@ -74,7 +74,7 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                               target="_blank"
                               rel="noopener noreferrer"
                            >
-                              Website
+                              Weboldal
                            </a>
                         </ListItem>
                         <ListItem>
@@ -83,7 +83,7 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                               target="_blank"
                               rel="noopener noreferrer"
                            >
-                              Guide
+                              Útmutató
                            </a>
                         </ListItem>
                         <ListItem>
@@ -124,27 +124,20 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                   pt={6}
                >
                   <Heading as="h2" fontSize="l" pb={6}>
-                     About Kusama
+                     Mi is a Kusama?
                   </Heading>
                   <Text>
-                     Kusama è canary network di Polkadot; una versione di
-                     Polkadot che è disponibile per prima e ha un valore
-                     economico reale. Per gli sviluppatori, Kusama è un banco di
-                     prova per aggiornamenti di runtime, on-chain governance e
-                     parachain.
+                  Kusama a Polkadot kanárihálózata; egy olyan Polkadot változat, 
+                  amely először áll rendelkezésre, és valós gazdasági értékkel rendelkezik. 
+                  A fejlesztők számára a Kusama egy tesztpad a futásidejű frissítések, az on-chain kormányzás és a parachainek számára.
                      <br />
                      <br />
-                     Kusama è di proprietà di coloro che detengono i token
-                     Kusama - KSM. Non esiste un kill switch centrale e tutte le
-                     modifiche vengono apportate tramite la governance on-chain
-                     del protocollo. La rete è senza autorizzazione e chiunque
-                     può venire e iniziare a usarla. Kusama è sperimentale.
-                     Expect Chaos.
+                     Kusama a Kusama tokenek - KSM birtokosainak tulajdona. Nincs központi kill switch, és minden változtatást a protokoll on-chain kormányzása révén hajtanak végre.
+                      A hálózat engedély nélküli, így bárki szabadon csatlakozhat és használhatja azt. Kusama kísérleti jellegű. Expect Chaos.
                      <br />
                      <br />
-                     Puoi interagire con tutte le funzionalità della rete Kusama
-                     come staking, governance, aste parachain, trasferimenti di
-                     base e tutto il resto.
+                     Lehet interakcióba lépni a Kusama hálózatának összes funkciójával, mint például a staking, 
+                     a kormányzás, a parachain aukciók, az alapvető átutalások és minden más.
                   </Text>
                </GridItem>
 
@@ -176,7 +169,7 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                   pt={6}
                >
                   <Heading as="h2" fontSize="l" pb={6}>
-                     Tutte le news
+                     Hírek
                   </Heading>
                   <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
                      {posts &&

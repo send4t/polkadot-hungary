@@ -4,12 +4,12 @@ import Link from 'next/link'
 const Links = [
    {
       name: 'Twitter',
-      url: 'https://twitter.com/PolkadotArena',
+      url: 'https://twitter.com/PolkadotHungary',
       icon: '<FaTwitter />',
    },
    {
       name: 'SubSocial',
-      url: 'https://app.subsocial.network/7218',
+      url: 'https://app.subsocial.network/11025',
       icon: '<FaTwitter />',
    },
 ]

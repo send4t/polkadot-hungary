@@ -35,23 +35,20 @@ function AllPost({
    return (
       <>
          <HeadSEO
-            titlePage={'Articoli di Polkadot Arena'}
+            titlePage={'Polkadot Hungary Community'}
             imagePage={'poster.png'}
-            summaryPage={'Qui trovi tutte le news dal team di Polkadot Arena.'}
+            summaryPage={'Összes cikk a Polkadot Hungary Community önkénteseitől'}
          />
          <Nav />
          <main>
             <SimpleGrid px={30} py={20}>
                <Box>
                   <Heading as="h1" size={{ base: '2xl', md: '4xl' }}>
-                     Polkadot Arena Blog
+                     Polkadot Hungary Community Blog
                   </Heading>
                   <Box pt={3}>
                      <Text>
-                        Qui trovi tutte le news dal team di Polkadot Arena,
-                        contenuti originali, traduzioni del blog ufficiale di
-                        Polkadot, traduzioni degli articoli ufficiali dei vari
-                        progetti.
+                     Egy blog magyarul a Polkadotról és Kusamaról, hírekkel, frissítésekkel, alpha változatokkal, pletykákkal, videókkal és fordításokkal.
                      </Text>
                   </Box>
                </Box>
@@ -69,7 +66,7 @@ function AllPost({
                   pt={6}
                >
                   <Heading as="h2" fontSize="l" pb={6}>
-                     Tutte le news
+                    Összes hír
                   </Heading>
                   <Box p={4}>
                      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
@@ -88,13 +85,13 @@ function AllPost({
                >
                   <Box pb={6}>
                      <Tags
-                        text="Raccolte di articoli"
+                        text="Cikkek gyűjteménye"
                         projects={collectionsTag}
                      />
                   </Box>
                   <Box borderTop="1px" borderColor="gray.200" pt={6} pb={6}>
                      <Heading as="h2" fontSize="l" pb={6}>
-                        In evidenza
+                       Kiemelt cikkek
                      </Heading>
                      <CardComponent
                         {...(highPostHome as ITcard)}

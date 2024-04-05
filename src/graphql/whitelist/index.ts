@@ -1,46 +1,31 @@
-const marco = '6943'
-const yamne = '7183'
-const menna = '10173'
-const paull = '7222'
-const mark889 = '8488'
-const capgallico = '7250'
-const wmItalia = '7218'
+
+const wmItalia = '11025' //Hungary
 const wmWeekly = '6111'
 const kusamarian = '4809'
 const dotleap = '1040'
 const alex = '10324'
 const astraIta = '11056'
 const vasak = '10992'
+const vonyi = '9908'
+const six = '10534'
 
-const addressMarco = '3op9AadRgrf15XEPBRVVGheg2hfmSfQYhFyruyhNbJk5bL7d'
-const addressYamne = '3ohANRnQ84YYHfMwpETL7YkXRnJ5cwCWfcXjshmc953epBAs'
-const addressMenna = '3pb5BqcoZCn4rNxW2aeX9kdmnGUVzL8M4Q1vdgiPqbupa1MK'
-const addressPaul = '3p9btWd5bCCc1Yk5RD2uWrwCgD5CsvzSRdzgamk9kJ2rbkCj'
-const addressMark889 = '3t7rPt8LK5iLLDG4BanW2ToTzpdkMLZRVea85PPkPjRC8C2F'
-const addressCapgallico = '3r3bDxv8gjiuJqLFfHLnk53VQYSMECeyuCmT5wNYA3h48Kuq'
+
 const addressAlex = '3sUX9vztg4gf9mnyppFnw5JvsLt8Qp6b41HUNaCcijx5Vry6'
 const addressVasa = '3rwQc4uJ3MZF5BqW6uKrRCiBWgRcc7BuaJUZkmgZaTeYAjUo'
-
+const addressVonyi = '3rokFtEKZRbB4uN6EngEBKUpLtDF49w1v2sUbKpPPLS53WBa'
+const addressSix = '3shkxtZQChTBjKt2VPTQ6faX4DqLezFZjiYyug9jTejUbAK5'
 
 export const teamAddresses = [
-   addressMarco,
-   addressYamne,
-   addressMenna,
-   addressPaul,
-   addressMark889,
-   addressCapgallico,
    addressAlex,
+   addressVonyi,
+   addressSix,
    //addressVasa,
 ]
 
 export const personalSpaces = [
-   marco,
-   yamne,
-   menna,
-   paull,
-   capgallico,
-   mark889,
    alex,
+   vonyi,
+   six,
    //vasak,
    //astraIta,
 ]
@@ -65,6 +50,8 @@ export const allSpaces = personalSpaces.concat([
    '4473',
    '10111',
    '7218',
+   '9908',
+   '10534',
 ])
 
 export const otherSpaces = [
