@@ -7,6 +7,7 @@ import {
    UnorderedList,
    Grid,
    GridItem,
+   Image,
 } from '@chakra-ui/react'
 import { GetServerSideProps, InferGetStaticPropsType } from 'next'
 import HeadSEO from '../components/seo/HeadSEOPage'
@@ -37,7 +38,7 @@ function About({
             }
          />
          <Nav />
-         <SimpleGrid px={30} py={20}>
+         <SimpleGrid px={32} py={20}>
             <Box>
                <Heading as="h1" size="4xl">
                   Polkadot Hungary Community
@@ -45,9 +46,9 @@ function About({
             </Box>
          </SimpleGrid>
 
-         <Grid templateColumns="repeat(12, 1fr)" p={30}>
+         <Grid templateColumns="repeat(12, 1fr)" p={32}>
             <GridItem
-               colSpan={{ base: 12, md: 7 }}
+               colSpan={{ base: 12, md: 8 }}
                borderTop="1px"
                borderColor="gray.200"
                py={6}
@@ -102,15 +103,8 @@ function About({
                <Text>
                   Chiunque può inviare un articolo originale o una traduzione perché venga pubblicata a discrezione della redazione. Al momento non possiamo garantire alcun tipo di retribuzione, poiché il progetto è alle battute iniziali. Prossimamente abbiamo in programma di proporre dei Tip su Polkadot e Kusama per contenuti di valore provenienti da fuori redazione e in futuro potremmo indire un bounty on-chain.
                </Text>
-            </GridItem>
-            <GridItem
-               colSpan={{ base: 12, md: 5 }}
-               borderTop="1px"
-               borderColor="gray.200"
-               p={6}
-            >
-               <Box>
-                  <Heading as="h2" fontSize="xl" pb={6}>
+               <Heading as="h2" fontSize="xl" pb={6}>
+               <br />
                      Come è costruito il blog
                   </Heading>
                   <Text>
@@ -154,6 +148,16 @@ function About({
                   <Text>
                      Il blog è alla sua prima versione e vuole garantire una buona SEO e il corretto recuperaro di articoli conservati on-chain. In questo momento stiamo lavorato alla v2.0, che prevede un backoffice con il quale si potrà registrare articoli su protocollo IPFS direttamente dal blog e ulteriori miglioramenti di performance e SEO.
                   </Text>
+            </GridItem>
+            <GridItem
+               colSpan={{ base: 12, md: 4 }}
+               borderTop="1px"
+               borderColor="gray.200"
+               p={6}
+               
+            >
+               <Box > 
+               <Image src='polkadotHU.png' alt='Dan Abramov' />
                </Box>
                
             </GridItem>

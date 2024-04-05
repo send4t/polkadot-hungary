@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
+
 let sito = 'https://polkadot-arena-blog.vercel.app/'
 let logo = 'https://polkadot-arena-blog.vercel.app/orizzontale.png'
-let favicon = 'https://polkadot-arena-blog.vercel.app/favicon.ico'
+let favicon = 'https://polkadothungary.vercel.app/favicon.ico'
 
 export interface SeoTag {
    imagePage: string
