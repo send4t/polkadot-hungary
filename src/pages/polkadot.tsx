@@ -65,7 +65,7 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                >
                   <Box pb={6}>
                      <Heading as="h2" fontSize="l" pb={6}>
-                        Link Ufficiali
+                     Hivatalos linkek
                      </Heading>
                      <UnorderedList>
                         <ListItem>
@@ -74,7 +74,7 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                               target="_blank"
                               rel="noopener noreferrer"
                            >
-                              Website
+                              Weboldal
                            </a>
                         </ListItem>
                         <ListItem>
@@ -142,27 +142,20 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                   pt={6}
                >
                   <Heading as="h2" fontSize="l" pb={6}>
-                     About Polkadot
+                     Mi is a Polkadot?
                   </Heading>
                   <Text>
-                     Polkadot consentirà un Web completamente decentralizzato in
-                     cui gli utenti hanno il controllo.
-                     <br />
-                     <br />
-                     Polkadot è costruito per connettere private and consortium
-                     chains, networks pubbliche e senza permissionless, oracles
-                     e tecnologie future che devono ancora essere create.
-                     Polkadot facilita un Internet in cui blockchain
-                     indipendenti possono scambiare informazioni e transazioni
-                     in modo affidabile tramite la relay chain di Polkadot.
-                     <br />
-                     <br />
-                     Polkadot rende più facile che mai creare e connettere
-                     applicazioni, servizi e istituzioni decentralizzate.
-                     Autorizzando gli innovatori a costruire soluzioni migliori,
-                     cerchiamo di liberare la società dalla sua dipendenza da
-                     una rete rotta in cui le sue grandi istituzioni non possono
-                     violare la nostra fiducia.
+                  Polkadot lehetővé teszi egy teljesen decentralizált web megvalósítását, ahol a felhasználók rendelkeznek az irányítással.
+                  <br />
+                  <br />
+                  Polkadot arra lett tervezve, hogy összekösse a privát és konzorciumi láncokat, a nyilvános és engedély nélküli hálózatokat, 
+                  az orákulumokat és a jövőbeli technológiákat, amelyek még meg sem születtek. Polkadot egy olyan internetet tesz lehetővé, 
+                  ahol a független blokkláncok megbízhatóan cserélhetnek információkat és tranzakciókat a Polkadot relay chainjén keresztül.
+                  <br />
+                  <br />
+                  Polkadotnál könnyebb, mint valaha, decentralizált alkalmazásokat és szolgáltatásokat, valamint intézményeket létrehozni 
+                  és összekapcsolni. Az innovátorok felhatalmazásával, hogy jobb megoldásokat hozzanak létre, célunk, hogy felszabadítsuk a
+                   társadalmat attól a függőségtől, amely egy törött hálózattal szembesít bennünket, ahol a nagy intézmények megsérthetik a bizalmunkat.
                   </Text>
                </GridItem>
 
@@ -194,7 +187,7 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                   pt={6}
                >
                   <Heading as="h2" fontSize="l" pb={6}>
-                     Tutte le news
+                     Összes hír
                   </Heading>
                   <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
                      {posts &&

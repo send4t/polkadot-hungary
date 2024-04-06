@@ -56,7 +56,7 @@ function Post({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                   pt={6}
                >
                   <Heading as="h2" fontSize="l" pb={6}>
-                     Tutte le news
+                     Összes hír
                   </Heading>
                   <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
                      {posts &&
