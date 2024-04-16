@@ -8,12 +8,12 @@ export function AdvSidebar() {
       <>
          <Box>
             <a
-               href="https://iiv.dev/"
+               href=""
                target="_blank"
                rel="noopener noreferrer"
             >
                <Text mb={3} textAlign="center" fontSize="xs">
-                  <i>Sponsored by ONDIN</i>
+                  <i>Sponszor helye</i>
                </Text>
                <Image
                   boxSize="180px"
@@ -23,16 +23,16 @@ export function AdvSidebar() {
                   mx="auto"
                />
                <Heading as="h2" fontSize="l" mt={3} textAlign="center">
-                  Polkadot/Kusama
+                  Lelkes és kedves
                   <br />
-                  professional validator
+                  támogatónk
                </Heading>
             </a>
          </Box>
          <Box borderTop="1px" borderColor="gray.200" m={6} py={6}>
             <a href="">
                <Text mb={3} textAlign="center" fontSize="xs">
-                  <i>Sponsored by Iceberg Nodes</i>
+                  <i>Szponzorálta NagySzponzor</i>
                </Text>
                <Image
                   boxSize="180px"
@@ -42,9 +42,9 @@ export function AdvSidebar() {
                   mx="auto"
                />
                <Heading as="h2" fontSize="l" mt={3} textAlign="center">
-                  Polkadot/Kusama Validator
+                  Második lelkes és kedves
                   <br />
-                  and Parachains Collator
+                  szponzorunk
                </Heading>
             </a>
          </Box>

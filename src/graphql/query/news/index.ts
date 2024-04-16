@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client'
 import { ParsedUrlQuery } from 'querystring'
-import { allSpaces, newsItaSpaces } from '../../whitelist'
+import { allSpaces, newsHuSpaces } from '../../whitelist'
 import { articleData, filterIds, postQuery, spaceData } from '../utils'
 import { highPostHome } from '../main'
 import { graphqlQuery } from '../query'
@@ -8,7 +8,7 @@ import { graphqlQuery } from '../query'
 export const spacesQuery = async () => {
    return await graphqlQuery({
       query: gql`
-         ${postQuery(newsItaSpaces)}
+         ${postQuery(newsHuSpaces)}
       `,
    })
 }

@@ -14,7 +14,7 @@ export default function Sidebar() {
         </Box> */}
          <Box borderTop="1px" borderColor="gray.200" pt={6} pb={6}>
             <Tags
-               text={'Scopri i progetti del mondo Dotsama'}
+               text={'Fedezd fel a projekteket'}
                projects={projects}
             />
          </Box>

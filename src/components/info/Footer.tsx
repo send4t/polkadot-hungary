@@ -25,15 +25,18 @@ export default function Footer() {
                <GridItem colSpan={{ base: 12, md: 6 }} p={6}>
                   <GridItem>
                      <Heading as="h3" fontSize="xl" mb={3}>
-                        Polkadot Arena
+                        Polkadot Hungary Community
                      </Heading>
                      <Text>
-                        Polkadot Arena è parte del progetto Italian Polkadot Ecosystem Hub, si occupa di divulgazione sull&apos;ecosistema di Polkadot e Kusama in lingua italiana e basato su una piattaforma di blogging decentralizzata.
+
+                     A csapat 2020 óta töretlenül szervezi a lokális Polkadot közösséget. Regionális Head Ambassador (Six) indította el és mára már a legaktívabb crypto/blokklánc közösség vagyunk Magyarországon esemény szervezés és <a href="https://t.me/polkadothungary/">Telegram csoport</a> aktivitás alapján. Fő motivációnk a közösségszervezés az edukáció a Polkadot ökoszisztéma használatára, ezért hírekkel, videókkal és informatív cikkekkel jelentkezünk folyamatosan.
                      </Text>
                      <br />
                      <Text>
-                        Polkadot Arena nasce dalla volontà di alcuni membri italiani della comunità Polkadot di porre rimedio alla frammentazione dei canali di informazione italiana riguardo all&apos;ecosistema. Creando un canale unico, l&apos;idea è quella di rendere Polkadot più avvicinabile per l&apos;utente medio e attrarre più partecipanti al network.
+                     Közösségünk formálja a Polkadot Network alakulását. A 219-es Pool ID-val elindítottuk a Polkadot Hungary Staking Pool-t, valamint szakértelmünkkel aktívan részt veszünk a Polkadot on-chain governance rendszerében, OpenGov-on. A szavazatokat közösségi elbírálás alapján határozzuk meg és szavazunk multisignature account-on keresztül.
                      </Text>
+                    
+      
                      <Box display={{ base: 'none', md: 'flex' }} mt={6}>
                         <HStack as={'nav'} spacing={0}>
                            <NevItems />
@@ -49,7 +52,7 @@ export default function Footer() {
                <GridItem colSpan={{ base: 12, md: 6 }} p={6}>
                   <Box>
                      <Heading as="h3" fontSize="xl" mb={3}>
-                        Seguici sui social
+                        Kövess minket
                      </Heading>
                      <HStack gap={6}>
                         <SocialLink />
@@ -57,19 +60,18 @@ export default function Footer() {
                   </Box>
                   <Box mt={6}>
                      <Heading as="h3" fontSize="l" mb={3}>
-                        For Tips
+                        Támogasd munkánkat
                      </Heading>
                      <Text>
-                        Polkadot Arena non è un progetto a scopo di lucro, tutti
-                        i creatori di contenuti e i dev lavorano per passione raccogliendo qualche tips di tanto in tanto. Se volete sostenere il nostro lavoro ve ne saremo grati!
+                        A Polkadot Hungary Community teljes mértékben önkéntes alapon működik, ezért minden szponorációt vagy támogatást szívesen fogadunk.
                      </Text>
                      <br />
                      <code>
-                        KSM: HtGyGQUdXmxymLTmN1x9VHxztRfTDRSo45U4SaQQKB17E8u
+                        KSM: cím
                      </code>
                      <br />
                      <code>
-                        DOT: 16JxTHKfrx2WfeXXxJFuPgm7hv95LrAQRAyCq5HoUbz2YZQL
+                        DOT: cím
                      </code>
                   </Box>
                </GridItem>

@@ -55,99 +55,71 @@ function About({
                px={3}
             >
                <Heading as="h2" fontSize="xl" pb={6}>
-                  La nostra missione
+                  A célunk
                </Heading>
                <Text>
-                  Polkadot Arena è un progetto che fa parte dell&apos;Italian Polkadot Ecosystem Hub, si occupa di divulgazione sull&apos;ecosistema di Polkadot e Kusama in lingua italiana e basato su una piattaforma di blogging decentralizzata.
-                  Vogliamo diventare il punto di riferimento italiano per tutto ciò che riguarda Polkadot e Kusama
+               A csapatunk 2020 óta töretlenül szervezi a lokális Polkadot közösséget. Ez idő alatt több, mint <a href="https://www.meetup.com/polkadot-hungary/" style={{ color: 'blue' }}>30 Polkadot Meetup</a>, <a href="https://cointelegraph.com/press-releases/hackers-wanted-for-polkadots-36k-metaverse-championship-anyone-welcome/" style={{ color: 'blue' }}>2 Polkadot Championship Hackathon-t</a>  és a Budapesi Blockchain Week legnagyobb eseményét, a Polkadot Day-t szervezezte meg. Közösségünket Six, a regionális Head Ambassador indította el és mára már a legaktívabb crypto/blokklánc közösség vagyunk Magyarországon esemény szervezés és <a href="https://t.me/polkadothungary/" style={{ color: 'blue' }}>Telegram csoport</a> aktivitás alapján. Fő motivációnk a közösségszervezés az edukáció a Polkadot ökoszisztéma használatára, így ellátjuk őket hírekkel, videókkal és informatív cikkekkel.
                </Text>
                <br />
                <Text>
-                  A tal fine, Polkadot Arena aggrega in un unico blog articoli originali, guide, tutorial e le traduzioni dei contenuti più importanti dell&apos;ecosistema.
+               A közösség ebben a blogban gyűjti össze az eredeti cikkeket, útmutatókat, oktatóanyagokat és az ökoszisztéma legfontosabb tartalmait.
                </Text>
                <br />
                <Heading as="h2" fontSize="xl" pb={6}>
-                  Una base solida
+                   Egy erős alap
                </Heading>
                <Text>
-                  Polkadot Arena nasce dalla volontà di alcuni membri italiani della comunità Polkadot di porre rimedio alla frammentazione dei canali di informazione italiana riguardo all&apos;ecosistema. Creando un canale unico, l&apos;idea è quella di rendere Polkadot più avvicinabile per l&apos;utente medio e attrarre più partecipanti al network.
+               A Polkadot Hungary néhány magyar Polkadot közösség tagjának akaratából született, hogy orvosolja a magyar információs csatornák fragmentálódását az ökoszisztémában. Egyetlen csatorna létrehozásával a cél az, hogy a Polkadotot közvetlenebbé tegyék az átlagos felhasználó számára, és több résztvevőt vonzanak a hálózathoz.
                </Text>
                <br />
                <Text>
-                  Il team fondatore di Polkadot Arena è formato da esperti in vari campi, dallo sviluppo informatico, alle traduzioni, al marketing. Questa natura eterogenea ci permette di produrre contenuti utili e piacevoli da fruire.
+               A Polkadot Hungary alapító csapata szakértőkből áll különböző területeken, a számítástechnikai fejlesztéstől, a marketingig. Ez a heterogén környezet lehetővé teszi számunkra, hogy hasznos és élvezetes tartalmakat állítsunk elő.
                </Text>
-               <br />
-               <Text>Al momento puoi seguire Polkadot Arena su:</Text>
-               <UnorderedList>
-                  <ListItem>
-                     Canale Twitter:{' '}
-                     <a
-                        href="https://twitter.com/PolkadotArena"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                     >
-                        @PolkadotArena
-                     </a>
-                  </ListItem>
-                  <ListItem>Blog: questo</ListItem>
-               </UnorderedList>
-               <br />
+               < br />
+               <Text>Jelenleg követheted a Polkadot Hungary-t itt:</Text>
+                  <UnorderedList>
+                     <ListItem>
+                         Twitter csatorna:{' '}
+                              <a
+                               href="https://twitter.com/PolkadotHungary"
+                               target="_blank"
+                                 rel="noopener noreferrer"
+                              >
+                               @PolkadotHungary
+                               </a>
+                     </ListItem>
+                     <ListItem>Blog: itt</ListItem>
+                     </UnorderedList>
+                     <br />
 
                <Heading as="h2" fontSize="xl" pb={6}>
-                  Partecipare a Polkadot Arena
+                  Részt venni a Polkadot Hungary-ben
                </Heading>
                <Text>
-                  In questo momento il modo migliore per sostenere Polkadot Arena è seguirci su Twitter e retwittare i nostri thread.
+                  Jelenleg a több módja is van annak, hogy támogasd a Polkadot Hungary-t, hogy kövess minket a Twitteren, és retweeteld a posztjainkat.
+                  Vegyél részt a havi eseményeinken. Stake-elj velünk és bízd ránk a szavazati erődet.
                </Text>
                <br />
                <Text>
-                  Chiunque può inviare un articolo originale o una traduzione perché venga pubblicata a discrezione della redazione. Al momento non possiamo garantire alcun tipo di retribuzione, poiché il progetto è alle battute iniziali. Prossimamente abbiamo in programma di proporre dei Tip su Polkadot e Kusama per contenuti di valore provenienti da fuori redazione e in futuro potremmo indire un bounty on-chain.
+                  Bárki beküldhet egy eredeti cikket vagy fordítást a közzétételre a szerkesztőség döntése alapján. Jelenleg nem tudunk semmilyen juttatást garantálni, mivel a projekt még a kezdeti szakaszban van. Hamarosan tervezzük a Polkadot és a Kusama Tip-ek javaslatát értékes tartalmakra, amelyek nem a szerkesztőségből származnak, és a jövőben lehet, hogy egy on-chain jutalmat is kiosztunk.
                </Text>
                <Heading as="h2" fontSize="xl" pb={6}>
                <br />
-                     Come è costruito il blog
-                  </Heading>
-                  <Text>
-                  A Polkadot Arena passiamo dalle parole ai fatti. Il nostro blog è costruito su tecnologie web3 e stiamo lavorando alla creazione di una piattaforma di blogging decentralizzata.
-                  Ogni articolo è registrato sul protocollo <b>IPFS</b> tramite il sistema
-                  di{' '}
-                     <a
-                        href="https://polkaverse.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                     >
-                        Polkaverse
-                     </a>
-                     ,un progetto di Subsocial su parachain di Polkadot{' '}
-                     <a
-                        href="https://subsocial.network/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                     >
-                        Subsocial
-                     </a>
-                     .
-                  </Text>
-                  <br />
-                  <Text>
-                     Per leggere i dati usiamo le chiamate GraphQl di Subsquid, un altro progetto decentralizzato che si occupa di connettere il mondo blockchain e la renderizzazione di dati on-screen.
-                     Per leggere i dati usiamo le chiamate{' '}
-                     <b>
-                        GraphQl di{' '}
-                        <a
-                           href="https://subsquid.io/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                        >
-                           Subsquid
-                        </a>
-                     </b>
-                     , un altro progetto decentralizzato che si occupa di connettere il mondo blockchain e la renderizzazione di dati on-screen.
-                  </Text>
-                  <br />
-                  <Text>
-                     Il blog è alla sua prima versione e vuole garantire una buona SEO e il corretto recuperaro di articoli conservati on-chain. In questo momento stiamo lavorato alla v2.0, che prevede un backoffice con il quale si potrà registrare articoli su protocollo IPFS direttamente dal blog e ulteriori miglioramenti di performance e SEO.
-                  </Text>
+                     Hogyan készült ez az oldal
+               </Heading>
+               <Text>
+                  A Polkadot szellemisége megkívánja, hogy ahol csak lehet decentralizált technológiát használjunk ezért nemcsak szavakban, hanem tettekben is igyekszünk így építkezni. A blogunk a web3 technológiákon alapul, az alap vázat a Polkadot Arena weboldaláról az engedélyükkel vettük át.
+                Minden cikkünk az IPFS protokollon keresztül van regisztrálva a <b>Polkaverse</b>-en keresztül, amely a Polkadot <a href="https://polkaverse.com/" target="_blank" rel="noopener noreferrer">Parachain projektje</a>.
+               </Text>
+               <br />
+               <Text>
+                  Az adatok olvasásához a <b>Subsquid</b> <a href="https://subsquid.io/" target="_blank" rel="noopener noreferrer">GraphQL hívásait</a> használjuk, egy másik decentralizált projektet, amely összeköti a blockchain világát és az adatok megjelenítését a képernyőn.
+               </Text>
+               <br />
+               <Text>
+                  A blogunk jelenleg az első verziójában van, és kiemelt fontosságú számunkra a jó SEO és a helyes cikkek on-chain történő visszakeresése.
+                  Folyamatosan dolgozunk, hogy egy jobb és a még felhasználóbarátabb tájékoztatást nyújtsunk .
+               </Text>
             </GridItem>
             <GridItem
                colSpan={{ base: 12, md: 4 }}

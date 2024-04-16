@@ -57,7 +57,7 @@ const SingleComponent: React.FC<ITpost> = (props) => {
                   <Breadcrumb separator={<ChevronRightIcon color="gray.500" />}>
                      <BreadcrumbItem>
                         <BreadcrumbLink href="#" onClick={() => router.back()}>
-                           &#8592; Torna indietro
+                           &#8592; Vissza
                         </BreadcrumbLink>
                      </BreadcrumbItem>
                   </Breadcrumb>

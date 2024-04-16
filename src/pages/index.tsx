@@ -32,7 +32,7 @@ import { Tags } from '../components/tags'
 import { collectionsTag } from '../components/tags/tags'
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
-   const { data: wmitalia } = await wagMediaItalyQuery()
+   const { data: polkadotHu } = await wagMediaItalyQuery()
    const { data: onlyPersonal } = await personalQuery()
    const { data: highPost } = await highPostQuery()
    const { data: kusamarian } = await kusamarianQuery()
@@ -40,7 +40,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 
    return {
       props: {
-         wmitalia: wmitalia.posts,
+         polkadotHu: polkadotHu.posts,
          onlyPersonal: onlyPersonal.posts,
          highPostHome: highPost.postById,
          kusamarian: kusamarian.posts,
@@ -50,7 +50,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 }
 
 function Home({
-   wmitalia,
+   polkadotHu,
    onlyPersonal,
    highPostHome,
    kusamarian,
@@ -128,7 +128,7 @@ function Home({
                   </Heading>
                   <Box>
                      <SimpleGrid columns={{ base: 2, md: 3 }} spacing={6}>
-                        {(wmitalia as ITcard[]).slice(0, 9).map((post) => (
+                        {(polkadotHu as ITcard[]).slice(0, 9).map((post) => (
                            <CardComponent {...post} key={post.id} />
                         ))}
                      </SimpleGrid>

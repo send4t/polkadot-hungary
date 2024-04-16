@@ -6,7 +6,7 @@ import {
    otherSpaces,
    personalSpaces,
    wagMediaSpace,
-   wmItalySpace,
+   polkadotHuSpace,
 } from '../../whitelist'
 import { postQuery, spaceData } from '../utils'
 import { graphqlQuery } from '../query'
@@ -22,7 +22,7 @@ export const personalQuery = async () => {
 export const wagMediaItalyQuery = async () => {
    return await graphqlQuery({
       query: gql`
-         ${postQuery(wmItalySpace)}
+         ${postQuery(polkadotHuSpace)}
       `,
    })
 }

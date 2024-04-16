@@ -12,6 +12,11 @@ const Links = [
       url: 'https://app.subsocial.network/11025',
       icon: '<FaTwitter />',
    },
+   {
+      name: 'Telegram',
+      url: 'https://t.me/polkadothungary',
+      icon: '<FaTwitter />',
+   },
 ]
 
 export default function SocialLink() {

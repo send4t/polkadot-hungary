@@ -1,6 +1,6 @@
 
-const wmItalia = '11025' //Hungary
-const wmWeekly = '6111'
+const polkadotHu = '11025' //Polkadot Hungary space
+const wmWeekly = '6111'    //WagMedia Weekly news https://grillapp.net/6111
 const kusamarian = '4809'
 const dotleap = '1040'
 const alex = '10324'
@@ -29,12 +29,12 @@ export const personalSpaces = [
    //vasak,
    //astraIta,
 ]
-export const newsItaSpaces = personalSpaces.concat([wmItalia])
-export const wmItalySpace = [wmItalia]
+export const newsHuSpaces = personalSpaces.concat([polkadotHu])
+export const polkadotHuSpace = [polkadotHu]
 export const wagMediaSpace = [wmWeekly]
 export const kusamarianSpace = [kusamarian]
 export const dotleapSpace = [dotleap]
-export const highPostSpace = ['36310']
+export const highPostSpace = ['37463'] //highlighted article on main page
 export const allSpaces = personalSpaces.concat([
    '2425',
    '5598',

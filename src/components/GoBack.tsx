@@ -11,7 +11,7 @@ export default function GoBack() {
                textDecoration: 'none',
             }}
          >
-            <a onClick={() => router.back()}>Torna indietro</a>
+            <a onClick={() => router.back()}>Vissza</a>
          </Link>
       </>
    )
