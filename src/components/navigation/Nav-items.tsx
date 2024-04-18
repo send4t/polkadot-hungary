@@ -6,12 +6,10 @@ let url = '../'
 const Links = [
    { name: 'Hírek', url: 'news', status: '' },
    { name: 'Polkadot', url: 'polkadot', status: '' },
-   { name: 'Kusama', url: 'kusama', status: '' },
    // { name: 'DeFi', url:'DeFi', status: ''},
    // { name: 'NFT', url:'NFT', status: ''},
    // { name: 'Area Dev', url:'area-dev', status: ''},
    { name: 'Rólunk', url: 'about', status: '' },
-   { name: 'Wiki', url: 'wiki', status: '' },
    // { name: 'Community ITA', url: 'community-italiana'}
 ]
 
@@ -66,6 +64,21 @@ export default function NevItems() {
             _hover={{ textDecoration: 'none' }}
             href="#"
          >
+
+         <Link
+            px={3}
+            py={1}
+            rounded={'md'}
+            key="wiki"
+            textColor="gray.700"
+            style={{ textTransform: 'capitalize' }}
+            _hover={{ textDecoration: 'none' }}
+            href="#"
+         >
+            <Tooltip label="Hamarosan" aria-label="A tooltip">
+               Wiki
+            </Tooltip>
+         </Link>
            
          </Link>
       </>

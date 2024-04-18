@@ -1,5 +1,5 @@
 import { Box, useColorModeValue } from '@chakra-ui/react'
-import { AdvSidebar } from './ads/Adv'
+// import { AdvSidebar } from './ads/Adv' //hírdetések
 import { Tags } from './tags'
 import { projects } from './tags/tags'
 
@@ -25,7 +25,7 @@ export default function Sidebar() {
             pb={6}
             bg={useColorModeValue('gray.100', 'gray.900')}
          >
-            <AdvSidebar />
+          {/* <AdvSidebar /> */}
          </Box>
       </>
    )
