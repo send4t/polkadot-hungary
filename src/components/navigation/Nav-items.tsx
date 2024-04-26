@@ -54,17 +54,7 @@ export default function NevItems() {
                {link.name}
             </Link>
          ))}
-         <Link
-            px={3}
-            py={1}
-            rounded={'md'}
-            key="NFT"
-            textColor="gray.700"
-            style={{ textTransform: 'capitalize' }}
-            _hover={{ textDecoration: 'none' }}
-            href="#"
-         >
-
+         
          <Link
             px={3}
             py={1}
@@ -73,14 +63,24 @@ export default function NevItems() {
             textColor="gray.700"
             style={{ textTransform: 'capitalize' }}
             _hover={{ textDecoration: 'none' }}
-            href="#"
+            href="https://wiki.polkadothungary.net"
          >
-            <Tooltip label="Hamarosan" aria-label="A tooltip">
-               Wiki
-            </Tooltip>
+            Wiki
+         </Link>
+         <Link
+            px={3}
+            py={1}
+            rounded={'md'}
+            key="stake"
+            textColor="gray.700"
+            style={{ textTransform: 'capitalize' }}
+            _hover={{ textDecoration: 'none' }}
+            href="https://stake.polkadothungary.net"
+         >
+            Stake
          </Link>
            
-         </Link>
+         
       </>
    )
 }
