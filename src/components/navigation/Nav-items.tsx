@@ -60,9 +60,11 @@ export default function NevItems() {
             py={1}
             rounded={'md'}
             key="wiki"
-            textColor="gray.700"
             style={{ textTransform: 'capitalize' }}
-            _hover={{ textDecoration: 'none' }}
+            _hover={{ 
+               textDecoration: 'none',
+               bg: hover,
+             }}
             href="https://wiki.polkadothungary.net"
          >
             Wiki
@@ -72,9 +74,11 @@ export default function NevItems() {
             py={1}
             rounded={'md'}
             key="stake"
-            textColor="gray.700"
             style={{ textTransform: 'capitalize' }}
-            _hover={{ textDecoration: 'none' }}
+            _hover={{ 
+               textDecoration: 'none',
+               bg: hover,
+             }}
             href="https://stake.polkadothungary.net"
          >
             Stake
