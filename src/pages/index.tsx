@@ -36,7 +36,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
    const { data: onlyPersonal } = await personalQuery()
    const { data: highPost } = await highPostQuery()
    const { data: kusamarian } = await kusamarianQuery()
-   const { data: dotleap } = await dotLeapQuery()
+  // const { data: dotleap } = await dotLeapQuery()
 
    return {
       props: {
@@ -44,7 +44,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
          onlyPersonal: onlyPersonal.posts,
          highPostHome: highPost.postById,
          kusamarian: kusamarian.posts,
-         dotleap: dotleap.posts,
+         // dotleap: dotleap.posts,
       },
    }
 }
@@ -53,8 +53,8 @@ function Home({
    polkadotHu,
    onlyPersonal,
    highPostHome,
-   kusamarian,
-   dotleap,
+    kusamarian,
+   // dotleap,
 }: InferGetStaticPropsType<typeof getServerSideProps>) {
    let router = useRouter()
 
@@ -144,16 +144,7 @@ function Home({
 
                <GridItem
                   colSpan={{ base: 12, md: 3 }}
-                  borderTop="1px"
-                  borderColor="gray.200"
-                  pt={6}
                >
-                  <Box pb={6}>
-                     <Tags
-                        text={'Cikkek gyűjteménye'}
-                        projects={collectionsTag}
-                     />
-                  </Box>
                   <Box
                      borderTop="1px"
                      borderColor="gray.200"
@@ -168,7 +159,6 @@ function Home({
                         key={(highPostHome as ITcard).id}
                      />
                   </Box>
-                  <Sidebar />
                </GridItem>
             </Grid>
 
@@ -207,32 +197,6 @@ function Home({
                      Kövess minket Twitteren
                   </Heading>
                   <Twitter />
-               </GridItem>
-            </Grid>
-
-            <Grid templateColumns="repeat(12, 1fr)" gap={4} p={30}>
-               <GridItem
-                  colSpan={{ base: 12, md: 12 }}
-                  borderTop="1px"
-                  borderColor="gray.200"
-                  pt={6}
-               >
-                  <Box mb={6}>
-                     <Heading as="h2" mb={6}>
-                        The last Dotleap
-                     </Heading>
-                     <Text>
-                        A fortnightly-ish newsletter about all things Web 3.0
-                        from the Polkadot side
-                     </Text>
-                     <Box pt={6}>
-                        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
-                           {(dotleap as ITcard[]).slice(0, 3).map((post) => (
-                              <CardComponent {...post} key={post.id} />
-                           ))}
-                        </SimpleGrid>
-                     </Box>
-                  </Box>
                </GridItem>
             </Grid>
 
