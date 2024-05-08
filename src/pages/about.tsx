@@ -31,7 +31,7 @@ function About({
    return (
       <>
          <HeadSEO
-            imagePage={'poster.png'}
+            imagePage={'pokadotHU.png'}
             titlePage={'Polkadot Hungary Community'}
             summaryPage={
                'Egy oldal magyarul a Polkadotról és Kusamaról, hírekkel, frissítésekkel, pletykákkal, videókkal és fordításokkal.'
@@ -129,7 +129,7 @@ function About({
                
             >
                <Box > 
-               <Image src='polkadotHU.png' alt='Dan Abramov' />
+               <Image src='polkadotHU.png' alt='Polkadot logo' />
                </Box>
                
             </GridItem>

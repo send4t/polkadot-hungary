@@ -2,8 +2,8 @@ import Head from 'next/head'
 import ipfsContent from '../../ipfs'
 import { useRouter } from 'next/router'
 
-let sito = 'https://polkadot-arena-blog.vercel.app'
-let logo = 'https://polkadot-arena-blog.vercel.app/orizzontale.png'
+let sito = 'https://polkadothungary.net'
+let logo = 'https://polkadothungary.net/polkadotHU.png'
 let favicon = 'https://polkadothungary.vercel.app/favicon.ico'
 
 export interface SeoTag {
@@ -32,14 +32,14 @@ const HeadSEO: React.FC<SeoTag> = (props) => {
          {/*General tags */}
          <title>{props.title}</title>
          <link rel="shortcut icon" type="image/ico" href={favicon} />
-         <meta name="author" content="Polkadot Arena" />
+         <meta name="author" content="Polkadot Hungary Community" />
          <meta name="description" content={props.summary} />
          <meta name="robots" content="index, follow" />
          <meta name="medium" content="blog" />
 
          {/* Open graph meta tags */}
-         <meta property="og:locale" content="it_IT" />
-         <meta property="og:site_name" content="Polkadot Arena" />
+         <meta property="og:locale" content="Hu" />
+         <meta property="og:site_name" content="Polkadot Hungary Community" />
          <meta property="og:type" content="website" />
          <meta property="og:description" content={props.summary} />
          <meta
@@ -49,8 +49,8 @@ const HeadSEO: React.FC<SeoTag> = (props) => {
          <meta property="og:url" content={sito + router.asPath} />
 
          <meta name="twitter:card" content={props.summary} />
-         <meta name="twitter:site" content="@PolkadotArena" />
-         <meta name="twitter:creator" content="@PolkadotArena" />
+         <meta name="twitter:site" content="@PolkadotHungary" />
+         <meta name="twitter:creator" content="@PolkadotHungary" />
 
          {/* Schema Org */}
          <script type="application/ld+json">
@@ -60,7 +60,7 @@ const HeadSEO: React.FC<SeoTag> = (props) => {
                 "url": "${sito + router.asPath}",
                 "publisher":{
                     "@type":"Organization",
-                    "name":"Polkadot Arena",
+                    "name":"Polkadot Hungary Community",
                     "logo":"${logo}"
                 },
                 "headline": "${props.title}",

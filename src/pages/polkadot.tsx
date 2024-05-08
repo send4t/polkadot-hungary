@@ -36,10 +36,10 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
    return (
       <>
          <HeadSEO
-            imagePage={'poster.png'}
+            imagePage={'polkadotHU.png'}
             titlePage={'Polkadot'}
             summaryPage={
-               'Polkadot consentirà un Web completamente decentralizzato in cui gli utenti hanno il controllo. Polkadot è costruito per connettere private and consortium chains, networks pubbliche e senza permissionless, oracles e tecnologie future che devono ancora essere create. '
+               'A Polkadot lehetővé teszi egy teljesen decentralizált web megvalósítását, ahol a felhasználók rendelkeznek az irányítással.'
             }
          />
          <Nav />

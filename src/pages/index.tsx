@@ -209,11 +209,10 @@ function Home({
                >
                   <Box mb={6}>
                      <Heading as="h2" mb={6}>
-                        Video from Kusamarian
+                        Legfrissebb Kusamarian videók
                      </Heading>
                      <Text>
-                        Kusamarian videos: The story of Polkadot/Kusama. Order
-                        in the Chaos
+                        Legyél naprakész a Kusamarian videóival
                      </Text>
                      <Box pt={6}>
                         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>

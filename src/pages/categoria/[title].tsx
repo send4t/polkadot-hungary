@@ -31,10 +31,10 @@ function Post({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
    return (
       <>
          <HeadSEO
-            titlePage={'Tutte le news su ' + NameH1?.replace('%20', ' ')}
-            imagePage={'orizzontale.png'}
+            titlePage={'Összes hír ' + NameH1?.replace('%20', ' ')}
+            imagePage={'polkadotHU.png'}
             summaryPage={
-               'Dal mondo Polkadot e Kusama news su uno specifico topic ' +
+               'A Polkadot és Kusama világából ' +
                NameH1?.replace('%20', ' ')
             }
          />
@@ -73,7 +73,7 @@ function Post({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                >
                   <Box pb={6}>
                      <Tags
-                        text={'Raccolte di articoli'}
+                        text={'Többi cikk'}
                         projects={collectionsTag}
                      />
                   </Box>

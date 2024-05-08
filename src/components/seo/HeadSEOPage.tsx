@@ -2,8 +2,8 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 
-let sito = 'https://polkadot-arena-blog.vercel.app/'
-let logo = 'https://polkadot-arena-blog.vercel.app/orizzontale.png'
+let sito = 'https://polkadothungary.net'
+let logo = 'https://polkadothungary.net/polkadotHU.png'
 let favicon = 'https://polkadothungary.vercel.app/favicon.ico'
 
 export interface SeoTag {
@@ -45,10 +45,10 @@ const HeadSEO: React.FC<SeoTag> = (props) => {
          {/*General tags */}
          <title>{props.titlePage}</title>
          <link rel="icon" type="image/x-icon" href={favicon} />
-         <meta name="author" content="Polkadot Arena" />
+         <meta name="author" content="Polkadot Hungary Community" />
          <meta name="description" content={props.summaryPage} />
          <meta name="robots" content="index, follow" />
-         <meta name="language" content="IT" />
+         <meta name="language" content="HU" />
          <meta
             name="topic"
             content="Polkadot, Kusama, Blockchain, NFT, DeFi, web3"
@@ -56,16 +56,16 @@ const HeadSEO: React.FC<SeoTag> = (props) => {
          <meta name="medium" content="blog" />
 
          {/* Open graph meta tags */}
-         <meta property="og:locale" content="it_IT" />
-         <meta property="og:site_name" content="Polkadot Arena" />
+         <meta property="og:locale" content="hu" />
+         <meta property="og:site_name" content="Polkadot Hungary Community" />
          <meta property="og:type" content="website" />
          <meta property="og:description" content={props.summaryPage} />
          <meta property="og:image" content={sito + props.imagePage} />
          <meta property="og:url" content={sito + router.asPath} />
 
          <meta name="twitter:card" content={props.summaryPage} />
-         <meta name="twitter:site" content="@PolkadotArena" />
-         <meta name="twitter:creator" content="@PolkadotArena" />
+         <meta name="twitter:site" content="@PolkadotHungary" />
+         <meta name="twitter:creator" content="@PolkadotHungary" />
 
          {/* Schema Org */}
          <script type="application/ld+json">
@@ -74,12 +74,12 @@ const HeadSEO: React.FC<SeoTag> = (props) => {
                     "@type": "Blog",
                     "@id": "${sito + router.asPath}",
                     "mainEntityOfPage": "${sito}",
-                    "name": "Polkadot Arena",
+                    "name": "Polkadot Hungary Community",
                     "description": "${props.summaryPage}",
                     "publisher": {
                         "@type": "Organization",
                         "@id": "${sito}",
-                        "name": "Polkadot Arena",
+                        "name": "Polkadot Hungary Community",
                         "logo": {
                             "@type": "ImageObject",
                             "@id": "${logo}",

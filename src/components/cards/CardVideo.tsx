@@ -84,7 +84,7 @@ const CardComponentVideo: React.FC<ITcardVideo> = (props) => {
             {<Text>{props.summary?.substring(0, 150)}</Text>}
          </Stack>
          <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
-            {props.space.id == '7218' ? (
+            {props.space.id == '12332' ? (
                <Avatar src={ipfsContent.ipfsURL + props.space?.image} />
             ) : (
                <Avatar
@@ -95,7 +95,7 @@ const CardComponentVideo: React.FC<ITcardVideo> = (props) => {
                />
             )}
             <Stack direction={'column'} spacing={0} fontSize={'sm'}>
-               {props.space.id == '7218' ? (
+               {props.space.id == '12332' ? (
                   <Text>Polkadot Arena</Text>
                ) : (
                   <Text fontWeight={600}>
