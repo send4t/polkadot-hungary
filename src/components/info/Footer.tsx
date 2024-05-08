@@ -77,10 +77,10 @@ export default function Footer() {
                </GridItem>
             </Grid>
          </footer>
-         <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="////" async></script>
+         <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="GTM-NNTK365F" async></script>
          <Script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=////"
+            src="https://www.googletagmanager.com/gtag/js?id=GTM-NNTK365F"
          ></Script>
          <script
             dangerouslySetInnerHTML={{
@@ -88,7 +88,7 @@ export default function Footer() {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '////', {
+                gtag('config', 'GTM-NNTK365F', {
                 page_path: window.location.pathname,
                 });
             `,
