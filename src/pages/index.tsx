@@ -75,7 +75,7 @@ function Home({
       <>
          <HeadSEO
             titlePage={'Polkadot Hungary Community'}
-            imagePage={'poster.png'}
+            imagePage={'polkadotHU.png'}
             summaryPage={
                'Egy oldal magyarul a Polkadotról és Kusamaról, hírekkel, frissítésekkel, pletykákkal, videókkal és fordításokkal.'
             }
@@ -102,6 +102,30 @@ function Home({
                gap={{ base: 3, md: 4, lg: 6 }}
                p={30}
             >
+               <GridItem
+                  colSpan={{ base: 12, md: 9 }}
+                  borderTop="1px"
+                  borderColor="gray.200"
+                  pt={6}
+               >
+                  <Heading as="h2" fontSize="l" pb={6}>
+                  A Polkadot és Kusama ökoszisztéma projektjei a Polkadot Hungary Community csapatától.
+                  </Heading>
+                  <Box>
+                     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
+                        {(onlyPersonal as ITcard[]).slice(0, 9).map((post) => (
+                           <CardComponent {...post} key={post.id} />
+                        ))}
+                     </SimpleGrid>
+                  </Box>
+                  <Center py={6}>
+                     <Button colorScheme="teal" variant="solid">
+                        <Link href="/news">
+                           <a>A blog összes cikke</a>
+                        </Link>
+                     </Button>
+                  </Center>
+               </GridItem>
                {/* <GridItem
                   colSpan={{ base: 12, md: 3 }}
                   borderTop="1px"
@@ -117,30 +141,7 @@ function Home({
                   </Box>
                </GridItem> */}
 
-               <GridItem
-                  colSpan={{ base: 12, md: 9 }}
-                  borderTop="1px"
-                  borderColor="gray.200"
-                  pt={6}
-               >
-                  <Heading as="h2" fontSize="l" pb={6}>
-                     A Polkadot hírei magyarul
-                  </Heading>
-                  <Box>
-                     <SimpleGrid columns={{ base: 2, md: 3 }} spacing={6}>
-                        {(polkadotHu as ITcard[]).slice(0, 9).map((post) => (
-                           <CardComponent {...post} key={post.id} />
-                        ))}
-                     </SimpleGrid>
-                  </Box>
-                  <Center py={6}>
-                     <Button colorScheme="teal" variant="solid">
-                        <Link href="/news">
-                           <a>Összes cikk</a>
-                        </Link>
-                     </Button>
-                  </Center>
-               </GridItem>
+               
 
                <GridItem
                   colSpan={{ base: 12, md: 3 }}
@@ -163,18 +164,18 @@ function Home({
             </Grid>
 
             <Grid templateColumns="repeat(12, 1fr)" gap={4} p={30}>
-               <GridItem
+            <GridItem
                   colSpan={{ base: 12, md: 9 }}
                   borderTop="1px"
                   borderColor="gray.200"
                   pt={6}
                >
                   <Heading as="h2" fontSize="l" pb={6}>
-                  A Polkadot és Kusama ökoszisztéma projektjei a Polkadot Hungary Community csapatától.
+                     A Polkadot hírei magyarul
                   </Heading>
                   <Box>
-                     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
-                        {(onlyPersonal as ITcard[]).slice(0, 9).map((post) => (
+                     <SimpleGrid columns={{ base: 2, md: 3 }} spacing={6}>
+                        {(polkadotHu as ITcard[]).slice(0, 9).map((post) => (
                            <CardComponent {...post} key={post.id} />
                         ))}
                      </SimpleGrid>
@@ -182,7 +183,7 @@ function Home({
                   <Center py={6}>
                      <Button colorScheme="teal" variant="solid">
                         <Link href="/news">
-                           <a>A blog összes cikke</a>
+                           <a>Összes cikk</a>
                         </Link>
                      </Button>
                   </Center>

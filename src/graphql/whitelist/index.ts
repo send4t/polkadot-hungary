@@ -8,17 +8,20 @@ const astraIta = '11056'
 const vasak = '10992'
 const vonyi = '9908'
 const six = '10534'
+const mildzsu = '29695'
 
 
 const addressAlex = '3sUX9vztg4gf9mnyppFnw5JvsLt8Qp6b41HUNaCcijx5Vry6'
 const addressVasa = '3rwQc4uJ3MZF5BqW6uKrRCiBWgRcc7BuaJUZkmgZaTeYAjUo'
 const addressVonyi = '3rokFtEKZRbB4uN6EngEBKUpLtDF49w1v2sUbKpPPLS53WBa'
 const addressSix = '3shkxtZQChTBjKt2VPTQ6faX4DqLezFZjiYyug9jTejUbAK5'
+const addressMildzsu = '3rXVQEpETgvU2vDig9ZKwFBBNh91rUp5sxcT2ZVHnnKwojvK'
 
 export const teamAddresses = [
    addressAlex,
    addressVonyi,
    addressSix,
+   addressMildzsu,
    //addressVasa,
 ]
 
@@ -26,6 +29,7 @@ export const personalSpaces = [
    alex,
    vonyi,
    six,
+   mildzsu,
    //vasak,
    //astraIta,
 ]
@@ -52,6 +56,7 @@ export const allSpaces = personalSpaces.concat([
    '7218',
    '9908',
    '10534',
+   '29695',
 ])
 
 export const otherSpaces = [
