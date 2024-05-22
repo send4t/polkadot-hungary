@@ -176,7 +176,7 @@ function Home({
                      A Polkadot hírei magyarul
                   </Heading>
                   <Box>
-                     <SimpleGrid columns={{ base: 2, md: 3 }} spacing={6}>
+                     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
                         {(polkadotHu as ITcard[]).slice(0, 9).map((post) => (
                            <CardComponent {...post} key={post.id} />
                         ))}
