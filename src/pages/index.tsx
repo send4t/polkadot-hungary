@@ -163,7 +163,9 @@ function Home({
                </GridItem>
             </Grid>
 
-            <Grid templateColumns="repeat(12, 1fr)" gap={4} p={30}>
+            <Grid templateColumns="repeat(12, 1fr)"
+               gap={{ base: 3, md: 4, lg: 6 }}
+               p={30}>
             <GridItem
                   colSpan={{ base: 12, md: 9 }}
                   borderTop="1px"
