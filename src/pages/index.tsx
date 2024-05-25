@@ -65,7 +65,7 @@ function Home({
          <div>
             <Box p={4}>
                <SimpleGrid columns={2} spacing={6}>
-                  <Text>Loding...</Text>
+                  <Text>Loading...</Text>
                </SimpleGrid>
             </Box>
          </div>
@@ -82,7 +82,7 @@ function Home({
          />
          <Nav />
          <main>
-            <SimpleGrid px={32} py={20}>
+            <SimpleGrid px={{base:0, md: 32}} py={20}>
                <Box>
                   <Heading as="h1" size={{ base: '2xl', md: '4xl' }}>
                      Üdvözöl

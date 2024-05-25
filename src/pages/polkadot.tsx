@@ -44,7 +44,7 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
          />
          <Nav />
          <main>
-            <SimpleGrid px={30} py={20}>
+            <SimpleGrid px={{base:0,md:32}} py={20}>
                <Box>
                   <Heading as="h1" size={{ base: '2xl', md: '4xl' }}>
                      Polkadot

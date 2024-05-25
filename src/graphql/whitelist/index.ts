@@ -30,6 +30,7 @@ export const personalSpaces = [
    vonyi,
    six,
    mildzsu,
+   polkadotHu,
    //vasak,
    //astraIta,
 ]

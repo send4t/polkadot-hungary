@@ -38,7 +38,7 @@ function About({
             }
          />
          <Nav />
-         <SimpleGrid px={32} py={20}>
+         <SimpleGrid px={{base:0,md:32}} py={20}>
             <Box>
                <Heading as="h1" size="4xl">
                   Polkadot Hungary Community
@@ -46,7 +46,7 @@ function About({
             </Box>
          </SimpleGrid>
 
-         <Grid templateColumns="repeat(12, 1fr)" p={32}>
+         <Grid templateColumns="repeat(12, 1fr)" p={{base:0,md:32}}>
             <GridItem
                colSpan={{ base: 12, md: 8 }}
                borderTop="1px"
@@ -126,12 +126,14 @@ function About({
                borderTop="1px"
                borderColor="gray.200"
                p={6}
-               
-            >
-               <Box > 
-               <Image src='polkadotHU.png' alt='Polkadot logo' />
-               </Box>
-               
+               display="flex"
+               justifyContent="center"
+               alignItems="center"
+               minHeight="200px" // Adjust the height as needed
+>
+            <Box>
+            <Image src='polkadotHU.png' alt='Polkadot logo' /> 
+            </Box>
             </GridItem>
          </Grid>
 

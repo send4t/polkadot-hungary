@@ -51,7 +51,7 @@ export default function Nav() {
    const { isOpen, onOpen, onClose } = useDisclosure()
    return (
       <header>
-         <Box bg={useColorModeValue('gray.100', 'gray.900')} px={32} py={1}>
+         <Box bg={useColorModeValue('gray.100', 'gray.900')} px={{base:0 , md:32}} py={1}>
             <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                <IconButton
                   size={'md'}
