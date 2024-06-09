@@ -113,7 +113,7 @@ function Home({
                   </Heading>
                   <Box>
                      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
-                        {(onlyPersonal as ITcard[]).slice(0, 9).map((post) => (
+                        {(polkadotHu as ITcard[]).slice(0, 9).map((post) => (
                            <CardComponent {...post} key={post.id} />
                         ))}
                      </SimpleGrid>
@@ -177,7 +177,7 @@ function Home({
                   </Heading>
                   <Box>
                      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
-                        {(polkadotHu as ITcard[]).slice(0, 9).map((post) => (
+                        {(onlyPersonal as ITcard[]).slice(0, 9).map((post) => (
                            <CardComponent {...post} key={post.id} />
                         ))}
                      </SimpleGrid>
