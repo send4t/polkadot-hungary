@@ -75,7 +75,7 @@ export default function Footer() {
          <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="GTM-NNTK365F" async></script>
          <Script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=GTM-NNTK365F"
+            src="https://www.googletagmanager.com/gtag/js?id=G-S4H4YCD5S0"
          ></Script>
          <script
             dangerouslySetInnerHTML={{
@@ -83,7 +83,7 @@ export default function Footer() {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'GTM-NNTK365F', {
+                gtag('config', 'G-S4H4YCD5S0', {
                 page_path: window.location.pathname,
                 });
             `,
