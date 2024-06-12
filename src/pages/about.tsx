@@ -118,7 +118,7 @@ function About({
                </Heading>
                <Text>
                   A Polkadot szellemisége megkívánja, hogy ahol csak lehet decentralizált technológiát használjunk ezért nemcsak elméletben, hanem tettekben is igyekszünk így építkezni. A blogunk a web3 technológiákon alapul, az alap vázat a Polkadot Arena weboldaláról az engedélyükkel vettük át.
-                Minden cikkünk az IPFS protokollon keresztül van regisztrálva a <b>Grill app</b>-on, amely a Polkadot <a href="https://grillapp.net" target="_blank" rel="noopener noreferrer">Parachain projektje</a>.
+                Minden cikkünk az IPFS protokollon keresztül van regisztrálva a <b>Subsocial</b>-on, amely a Polkadot <a href="subsocial.network" target="_blank" rel="noopener noreferrer">Parachain projektje</a>.
                </Text>
                <br />
                <Text>
