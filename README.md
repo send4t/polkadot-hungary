@@ -1,7 +1,7 @@
 # Welcome to the Polkadot Hungary Community website#
 Site is forked from the Polkadot Arena site with the approval of Marco.
 
-Every article on the blog, and all its content, is recorded on the <b>IPFS</b> protocol, in this V1, through the <a href="https://polkaverse.com/" target="_blank" rel="noopener noreferrer">Polkaverse</a> system, this is a project of Kusama <a href="https://subsocial.network/" target="_blank" rel="noopener noreferrer"> Subsocial&apos;s </a> parachain.
+Every article on the blog, and all its content, is recorded on the <b>IPFS</b> protocol, in this V1, through the <a href="https://grillapp.net" target="_blank" rel="noopener noreferrer">Grill app</a>, this is a project of Polkadot <a href="https://subsocial.network/" target="_blank" rel="noopener noreferrer"> Subsocial&apos;s </a> parachain.
 
 What we do, is read the data through <b>GraphQl calls from <a href="https://subsquid.io/" target="_blank" rel="noopener noreferrer">Subsquid</a></b>. Subsquid is a data index project on Substrate and also EVM.
 
@@ -30,10 +30,10 @@ There are many useful components for the creation of a blog.
 List: TDB
 
 
-## Referenze
+## References
 
 - Subsocial info: <a href="https://subsocial.network/" target="_blank" rel="noopener noreferrer"> here</a>
-- Polkavers, where the articles come from: <a href="https://polkaverse.com/" target="_blank" rel="noopener noreferrer">here</a>
+- Grill app, where the articles come from: <a href="https://grillapp.net/" target="_blank" rel="noopener noreferrer">here</a>
 - Subsquid, to read and rendering data: <a href="https://subsquid.io/" target="_blank" rel="noopener noreferrer">here</a>
 - Subsquid GraphQl template for Polkavers: <a href="https://squid.subsquid.io/subsocial/graphql" target="_blank" rel="noopener noreferrer">here</a>
 - Subsocial SDk, in this v1 is not used but sure we will add in the next version: <a href="https://github.com/dappforce" target="_blank" rel="noopener noreferrer">here</a>
