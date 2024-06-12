@@ -148,14 +148,14 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                   Polkadot lehetővé teszi egy teljesen decentralizált web megvalósítását, ahol a felhasználók rendelkeznek az irányítással.
                   <br />
                   <br />
-                  Polkadot arra lett tervezve, hogy összekösse a privát és konzorciumi láncokat, a nyilvános és engedély nélküli hálózatokat, 
-                  az orákulumokat és a jövőbeli technológiákat, amelyek még meg sem születtek. Polkadot egy olyan internetet tesz lehetővé, 
-                  ahol a független blokkláncok megbízhatóan cserélhetnek információkat és tranzakciókat a Polkadot relay chainjén keresztül.
+                  Polkadot eredeti tervek alapján célnak tűzte ki, hogy összekösse a privát és konzorciumi láncokat, a nyilvános és engedély nélküli hálózatokat, 
+                  az orákulumokat és a jövőbeli technológiákat. Polkadot egy olyan internetet tesz lehetővé, 
+                  ahol a független blokkláncok megbízhatóan cserélhetnek információkat és tranzakciókat a Polkadot Relay Chain-jén keresztül.
                   <br />
                   <br />
-                  Polkadotnál könnyebb, mint valaha, decentralizált alkalmazásokat és szolgáltatásokat, valamint intézményeket létrehozni 
-                  és összekapcsolni. Az innovátorok felhatalmazásával, hogy jobb megoldásokat hozzanak létre, célunk, hogy felszabadítsuk a
-                   társadalmat attól a függőségtől, amely egy törött hálózattal szembesít bennünket, ahol a nagy intézmények megsérthetik a bizalmunkat.
+                  Polkadot-on egyszerűbb, mint valaha, decentralizált alkalmazásokat, szolgáltatásokat, valamint intézményi rendszereket létrehozni 
+                  és összekapcsolni. Az fejlesztők célja, hogy jobb megoldásokat hozzanak létre, hogy felszabadítsák a
+                   társadalmat attól a függőségtől, amely egy nem működő rendszerrel szembesít bennünket, ahol a nagy intézmények megsérthetik a bizalmunkat.
                   </Text>
                </GridItem>
 
