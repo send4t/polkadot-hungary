@@ -118,7 +118,7 @@ function About({
                </Heading>
                <Text>
                   A Polkadot szellemisége megkívánja, hogy ahol csak lehet decentralizált technológiát használjunk ezért nemcsak elméletben, hanem tettekben is igyekszünk így építkezni. A blogunk a web3 technológiákon alapul, az alap vázat a Polkadot Arena weboldaláról az engedélyükkel vettük át.
-                Minden cikkünk az IPFS protokollon keresztül van regisztrálva a <b><a href="subsocial.network" target="_blank" rel="noopener noreferrer">Subsocial</b></a>-on, amely a Polkadot Parachain projektje.
+                Minden cikkünk az IPFS protokollon keresztül van regisztrálva a <b><a href="subsocial.network" target="_blank" rel="noopener noreferrer">Subsocial</a></b>-on, amely a Polkadot Parachain projektje.
                </Text>
                <br />
                <Text>
