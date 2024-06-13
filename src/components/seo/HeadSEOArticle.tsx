@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 let sito = 'https://polkadothungary.net'
 let logo = 'https://polkadothungary.net/polkadotHU.png'
-let favicon = 'https://polkadothungary.vercel.app/favicon.ico'
+let favicon = 'https://www.polkadothungary.net/favicon.ico'
 
 export interface SeoTag {
    posts: SeoTag
