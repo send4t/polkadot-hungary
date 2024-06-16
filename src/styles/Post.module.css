@@ -2,9 +2,9 @@
   margin-bottom: 3rem;
 }
 .article p{
-  font-size: 20px;
+  font-size: 1rem;
   margin-bottom: 15px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.3px;
   line-height: 1.5;
 }
 .article section a{
@@ -18,10 +18,10 @@
   margin-bottom: 15px;
 }
 .article h1{
-  margin-bottom: 20px; 
+  margin-bottom: 1.5rem; 
 }
 .article h2{
-  font-size: 1.875rem;
+  font-size: 1.4rem;
   margin-bottom: 15px;
 }
 .article h4{
