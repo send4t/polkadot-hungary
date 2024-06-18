@@ -1,4 +1,4 @@
-export const spaceData = (): string => {
+export const spaceData = () => {
    return `id
        createdAtTime
        image
@@ -19,10 +19,10 @@ export const spaceData = (): string => {
          id
          image
          name
-       }`;
+       }`
 }
 
-export const articleData = (): string => {
+export const articleData = () => {
    return `id
        canonical
        createdAtTime
@@ -38,28 +38,45 @@ export const articleData = (): string => {
            name
            about
          }
-       }`;
+       }`
 }
 
-export const siteMap = (): string => {
+export const siteMap = () => {
    return `id
      createdAtTime
      title
-     `;
+     `
 }
 
-export const postQuery = (ids: string[], isSiteMap?: boolean): string => {
+export const postQuery = (ids: string[], isSiteMap?: boolean) => {
    return `query MyQuery {
-        posts(where: {space: ${filterIds(ids)}, kind_eq: RegularPost, hidden_eq: false}, orderBy: createdAtTime_DESC) {
+        posts(where: {space: ${filterIds(
+           ids
+        )}, kind_eq: RegularPost, hidden_eq: false}, orderBy: createdAtTime_DESC) {
           ${isSiteMap ? siteMap() : spaceData()}
         }
-      }`;
+      }`
 }
 
-export const filterIds = (ids: string[]): string => {
-   return ids.map(id => `"${id}"`).join(', ');
+export const filterIds = (ids: string[]) => {
+   let value = ''
+   let count = 0
+   let i = 0
+   for (i; i < ids.length - 1; i++) {
+      if (value != '') {
+         value += 'OR: '
+      }
+      value += '{id_eq: "' + ids[i] + '", '
+      count++
+   }
+   if (value != '') {
+      value += 'OR: '
+   }
+   count++
+   value += '{id_eq: "' + ids[i] + '"' + '}'.repeat(count)
+
+   return value
 }
 
-export const teamList = (teamList: string[]): string => {
-   return filterIds(teamList) + ', orderBy: id_ASC';
-}
+export const teamList = (teamList: string[]) =>
+   filterIds(teamList) + ', orderBy: id_ASC'
