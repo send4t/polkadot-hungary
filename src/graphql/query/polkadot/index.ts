@@ -13,18 +13,19 @@ export const polkadotPageQuery = async () => {
 
 export function showPolkadotFeed() {
    return `query MyQuery {
-      posts(where: {
-         OR: [
-            {tagsOriginal_contains: "Polkadot"},
-            {title_contains: "Polkadot"}
-         ],
-         AND: {
-            space: ${filterIds(allSpaces)}
+      posts(
+         where: {
+            OR: [
+               { tagsOriginal_contains: "Polkadot" },
+               { title_contains: "Polkadot" }
+            ],
+            AND: { space_in: ${JSON.stringify(filterIds(allSpaces))} },
+            kind_eq: RegularPost,
+            hidden_eq: false
          },
-         kind_eq: RegularPost,
-         hidden_eq: false
-      }, orderBy: createdAtTime_DESC) {
-        ${spaceData()}
+         orderBy: createdAtTime_DESC
+      ) {
+         ${spaceData()}
       }
-    }`;
+   }`;
 }
