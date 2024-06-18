@@ -57,7 +57,7 @@ function About({
 
          <Grid templateColumns="repeat(12, 1fr)" p={{ base: 0, md: 32 }}>
             <GridItem
-               colSpan={{ base: 0, md: 8}}
+               colSpan={{ base: 12, md: 8 }}
                borderTop="1px"
                borderColor="gray.200"
                py={6}
