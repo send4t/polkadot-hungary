@@ -11,7 +11,7 @@ export const polkadotPageQuery = async () => {
    });
 };
 
-export function showPolkadotFeed() {
+export function showPolkadotFeed(): string {
    const spaceFilter = filterIds(allSpaces);
    return `query MyQuery {
       posts(
@@ -32,7 +32,3 @@ export function showPolkadotFeed() {
       }
    }`;
 }
-
-export const filterIds = (ids) => {
-   return ids.map(id => `"${id}"`).join(', ');
-};
