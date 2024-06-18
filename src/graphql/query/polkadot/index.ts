@@ -1,23 +1,38 @@
-import { gql } from '@apollo/client'
-import { allSpaces } from '../../whitelist'
-import { filterIds, spaceData } from '../utils'
-import { graphqlQuery } from '../query'
+import { gql } from '@apollo/client';
+import { allSpaces } from '../../whitelist';
+import { filterIds, spaceData } from '../utils';
+import { graphqlQuery } from '../query';
 
 export const polkadotPageQuery = async () => {
    return await graphqlQuery({
       query: gql`
          ${showPolkadotFeed()}
       `,
-   })
-}
+   });
+};
 
 export function showPolkadotFeed() {
+   const spaceFilter = filterIds(allSpaces);
    return `query MyQuery {
-      posts(where: {tagsOriginal_contains: "Polkadot", AND: {space: ${filterIds(
-         allSpaces
-      )}}, kind_eq: RegularPost, hidden_eq: false}, orderBy: createdAtTime_DESC) {
-        ${spaceData()}    
+      posts(
+         where: {
+            OR: [
+               { tagsOriginal_contains: "Polkadot" },
+               { title_contains: "Polkadot" }
+            ],
+            AND: [
+               { space_in: [${spaceFilter}] },
+               { kind_eq: RegularPost },
+               { hidden_eq: false }
+            ]
+         },
+         orderBy: createdAtTime_DESC
+      ) {
+         ${spaceData()}
       }
-    }`
+   }`;
 }
 
+export const filterIds = (ids) => {
+   return ids.map(id => `"${id}"`).join(', ');
+};
