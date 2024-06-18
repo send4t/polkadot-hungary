@@ -32,7 +32,7 @@ const Links = [
 // );
 
 export default function NevItems() {
-   const hover = useColorModeValue('gray.300', 'gray.700')
+   const hover = useColorModeValue('#E9208A', '#E9208A')
 
    return (
       <>
