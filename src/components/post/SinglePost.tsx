@@ -54,14 +54,24 @@ const SingleComponent: React.FC<ITpost> = (props) => {
          {props.downvotesCount <= 3 && (
             <article className={styles.article}>
                <Box maxW={{ base: '100%', md: '870px' }} m={3}>
-                  <Breadcrumb separator={<ChevronRightIcon color="gray.500" />}>
-                     <BreadcrumbItem>
-                        <BreadcrumbLink href="#" onClick={() => router.back()}>
-                           &#8592; Vissza
-                        </BreadcrumbLink>
-                     </BreadcrumbItem>
-                  </Breadcrumb>
-               </Box>
+            <Breadcrumb separator={<ChevronRightIcon color="gray.500" />}>
+               <BreadcrumbItem>
+                  <BreadcrumbLink
+                     href="#"
+                     onClick={() => router.back()}
+                     color="#E9208A"
+                     fontWeight="bold"
+                     fontSize="lg"
+                     p={2}
+                     border="2px solid #E9208A"
+                     borderRadius="md"
+                     _hover={{ textDecoration: 'none', bg: '#E9208A', color: '#FFF' }}
+                  >
+                     &#8592; Vissza
+                  </BreadcrumbLink>
+               </BreadcrumbItem>
+            </Breadcrumb>
+         </Box>
                <Center mt={10}>
                   <Box
                      maxW={{ base: '100%', md: '870px' }}
