@@ -1,3 +1,4 @@
+import React from 'react'
 import Link from 'next/link'
 import {
    Box,
@@ -7,7 +8,9 @@ import {
    Avatar,
    Tag,
    HStack,
+   Code,
 } from '@chakra-ui/react'
+import { TwitterTweetEmbed } from 'react-twitter-embed'
 import ipfsContent from '../../ipfs'
 
 export interface ITcardVideo {
@@ -36,8 +39,28 @@ const CardComponentVideo: React.FC<ITcardVideo> = (props) => {
    const date = new Date(props?.createdAtTime)
    let linkname = props.title
    let cate = props.tagsOriginal?.split(',').reverse().slice(-1)
-   let youtube = props.link?.substring(props.link?.lastIndexOf('/') + 1)
-   let linkYT = 'https://www.youtube.com/embed/' + youtube
+
+   let embedCode
+   let contentType
+
+   if (props.link.includes('youtube')) {
+      const youtube = props.link?.substring(props.link?.lastIndexOf('/') + 1)
+      const linkYT = 'https://www.youtube.com/embed/' + youtube
+      embedCode = <iframe width="100%" height="265" src={linkYT}></iframe>
+      contentType = 'YouTube video'
+   } else if (props.link.includes('twitter') || props.link.includes('x.com')) {
+      const tweetId = props.link.split('/').pop() || ''
+      embedCode = (
+         <div style={{ width: '100%', height: '465px', overflow: 'hidden', position: 'relative' }}>
+            <div style={{ position: 'absolute', top: '-40%', left: '50%', transform: 'translateX(-50%)', width: '100%' }}>
+               <TwitterTweetEmbed tweetId={tweetId} options={{ width: '100%' }} />
+            </div>
+         </div>
+      )
+      contentType = 'Twitter (X) post'
+   } else {
+      contentType = 'Unknown content type'
+   }
 
    if (linkname != undefined) {
       var titleURL =
@@ -50,6 +73,7 @@ const CardComponentVideo: React.FC<ITcardVideo> = (props) => {
    } else {
       var titleURL = '/news/' + linkname + '?id=' + props.id + '?cat=' + cate
    }
+
    return (
       <Box
          boxShadow={'2xl'}
@@ -59,7 +83,7 @@ const CardComponentVideo: React.FC<ITcardVideo> = (props) => {
          id={props.id}
       >
          <Box bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'}>
-            <iframe width="100%" height="265" src={linkYT}></iframe>
+            {embedCode}
          </Box>
          <HStack mb={3} spacing={1}>
             {props.tagsOriginal != '' &&

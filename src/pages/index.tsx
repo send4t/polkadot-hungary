@@ -204,32 +204,31 @@ function Home({
             </Grid>
 
             <Grid templateColumns="repeat(12, 1fr)" gap={4} p={30}>
-               <GridItem
-                  colSpan={{ base: 12, md: 12 }}
-                  borderTop="1px"
-                  borderColor="gray.200"
-                  pt={6}
-               >
-                  <Box mb={6}>
-                     <Heading as="h2" mb={6}>
-                        Legfrissebb Kusamarian videók
-                     </Heading>
-                     <Text>
-                        Legyél naprakész a Kusamarian videóival 
-                     </Text>
-                     <Box pt={6}>
-                        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
-                           {(kusamarian as ITcardVideo[])
-                              .slice(0, 3)
-                              .map((post) => (
-                                 <CardComponentVideo {...post} key={post.id} />
-                              ))} 
-                        </SimpleGrid>
-                     </Box>
-                  </Box>
-               </GridItem>
-            </Grid>
-
+   <GridItem
+      colSpan={{ base: 12, md: 12 }}
+      borderTop="1px"
+      borderColor="gray.200"
+      pt={6}
+   >
+      <Box mb={6}>
+         <Heading as="h2" mb={6}>
+            Legfrissebb Kusamarian videók
+         </Heading>
+         <Text>
+            Legyél naprakész a Kusamarian videóival 
+         </Text>
+         <Box pt={6}>
+            <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
+               {(kusamarian as ITcardVideo[])
+                  .slice(0, 3)
+                  .map((post) => (
+                     <CardComponentVideo {...post} key={post.id} />
+                  ))}
+            </SimpleGrid>
+         </Box>
+      </Box>
+   </GridItem>
+</Grid>
             {/* <Grid templateColumns='repeat(12, 1fr)' gap={4} p={30}>
              <GridItem colSpan={{base: 12, md: 12}} borderTop='1px' borderColor='gray.200' pt={6}>
              <Box mb={6}>
