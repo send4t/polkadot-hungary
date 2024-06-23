@@ -18,11 +18,11 @@ import HeadSEO from '../components/seo/HeadSEOPage'
 import { polkadotPageQuery } from '../graphql/query/polkadot'
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
-   const { data } = await polkadotPageQuery()
+   const { data: polkadotOnly } = await polkadotPageQuery()
 
    return {
       props: {
-         posts: data.posts,
+         posts: polkadotOnly.posts,
       },
    }
 }
@@ -190,8 +190,7 @@ function Page({ posts }: InferGetStaticPropsType<typeof getServerSideProps>) {
                      Polkadot hírek a globális ökoszisztémából
                   </Heading>
                   <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
-                     {posts &&
-                        (posts as ITcard[]).map((post) => (
+                     {(posts as ITcard[]).slice(0,9).map((post) => (
                            <CardComponent {...post} key={post.id} />
                         ))}
                   </SimpleGrid>

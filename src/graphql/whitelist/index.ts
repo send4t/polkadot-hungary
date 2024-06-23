@@ -40,7 +40,7 @@ export const wagMediaSpace = [wmWeekly]
 export const kusamarianSpace = [kusamarian]
 export const dotleapSpace = [dotleap]
 export const highPostSpace = ['37463'] //highlighted article on main page
-export const allSpaces = personalSpaces.concat([
+export const allSpaces = [
    '2425',
    '5598',
    '6302',
@@ -58,8 +58,13 @@ export const allSpaces = personalSpaces.concat([
    '9908',
    '10534',
    '29695',
+   '1354',
+   '8779',
+]
+export const polkadotOnly = [
+   '1354', //Bill Laboon
    '8779', //Bill Laboon
-])
+]
 
 export const otherSpaces = [
    '2425', //rmrk

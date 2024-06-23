@@ -215,7 +215,7 @@ function Home({
                         Legfrissebb Kusamarian videók
                      </Heading>
                      <Text>
-                        Legyél naprakész a Kusamarian videóival
+                        Legyél naprakész a Kusamarian videóival 
                      </Text>
                      <Box pt={6}>
                         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
@@ -223,7 +223,7 @@ function Home({
                               .slice(0, 3)
                               .map((post) => (
                                  <CardComponentVideo {...post} key={post.id} />
-                              ))}
+                              ))} 
                         </SimpleGrid>
                      </Box>
                   </Box>
