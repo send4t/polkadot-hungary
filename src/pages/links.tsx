@@ -58,6 +58,7 @@ import {
                _hover={{ textDecoration: 'none', bg: '#E9208A', color: '#FFF' }}
                mb={4}
                width={{ base: '80%', md: '40%' }}
+              target="_blank"
              >
                Polkadot meetups Budapest
              </Button>
@@ -73,6 +74,7 @@ import {
                _hover={{ textDecoration: 'none', bg: '#E9208A', color: '#FFF' }}
                mb={4}
                width={{ base: '80%', md: '40%' }}
+              target="_blank"
              >
                YouTube
              </Button>
@@ -88,6 +90,7 @@ import {
                _hover={{ textDecoration: 'none', bg: '#E9208A', color: '#FFF' }}
                mb={4}
                width={{ base: '80%', md: '40%' }}
+              target="_blank"
              >
                Telegram
              </Button>
@@ -103,6 +106,7 @@ import {
                _hover={{ textDecoration: 'none', bg: '#E9208A', color: '#FFF' }}
                mb={4}
                width={{ base: '80%', md: '40%' }}
+              target="_blank"
              >
                X
              </Button>
@@ -118,6 +122,7 @@ import {
                _hover={{ textDecoration: 'none', bg: '#E9208A', color: '#FFF' }}
                mb={4}
                width={{ base: '80%', md: '40%' }}
+              target="_blank"
              >
                Facebook
              </Button>

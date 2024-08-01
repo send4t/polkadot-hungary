@@ -135,8 +135,8 @@ const CardComponent: React.FC<ITcard> = (props) => {
                />
             )}
             <Stack direction={'column'} spacing={0} fontSize={'sm'}>
-               {props.space.id == '7218' ? (
-                  <Text>Polkadot Arena</Text>
+               {props.space.id == '11025' ? (
+                  <Text>Polkadot Hungary</Text>
                ) : (
                   <Text fontWeight={600}>
                      {props.ownedByAccount.profileSpace?.name}
