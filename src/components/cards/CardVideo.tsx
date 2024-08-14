@@ -1,71 +1,136 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react'
+import Link from 'next/link'
 import {
    Box,
    Heading,
    Text,
    Stack,
-} from '@chakra-ui/react';
-import axios from 'axios';
+   Avatar,
+   Tag,
+   HStack,
+   Code,
+} from '@chakra-ui/react'
+import { TwitterTweetEmbed } from 'react-twitter-embed'
+import ipfsContent from '../../ipfs'
 
-type Video = {
-  id: string;
-  title: string;
-  description: string;
-  thumbnail: string;
-};
+export interface ITcardVideo {
+   id: string
+   createdAtTime: number
+   image: string
+   title: string
+   downvotesCount: number
+   summary: string
+   tagsOriginal: string
+   link: string
+   ownedByAccount: {
+      profileSpace: {
+         name: string
+         image: string
+      }
+   }
+   space: {
+      id: string
+      name: string
+      image: string
+   }
+}
 
-const YOUTUBE_PLAYLIST_ID = 'PLtyd7v_I7PGlMekTepCvnf8WMKVR1nhLZ';
-const YOUTUBE_API_KEY = 'AIzaSyBU7HfatqTfSS8RxG75BShc-Y7dqC_tli0'; // Replace with your YouTube Data API key
+const CardComponentVideo: React.FC<ITcardVideo> = (props) => {
+   const date = new Date(props?.createdAtTime)
+   let linkname = props.title
+   let cate = props.tagsOriginal?.split(',').reverse().slice(-1)
 
-const CardComponentVideo = () => {
-   const [videos, setVideos] = useState<Video[]>([]); // Notice the Video[] type here
+   let embedCode
+   let contentType
 
-   useEffect(() => {
-      const fetchLatestVideos = async () => {
-         try {
-            const response = await axios.get(
-               `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=3&playlistId=${YOUTUBE_PLAYLIST_ID}&key=${YOUTUBE_API_KEY}`
-            );
-            setVideos(
-               response.data.items.map((item: any) => ({
-                  id: item.snippet.resourceId.videoId,
-                  title: item.snippet.title,
-                  description: item.snippet.description,
-                  thumbnail: item.snippet.thumbnails.high.url,
-               }))
-            );
-         } catch (error) {
-            console.error('Error fetching YouTube playlist:', error);
-         }
-      };
+   if (props.link.includes('youtube')) {
+      const youtube = props.link?.substring(props.link?.lastIndexOf('/') + 1)
+      const linkYT = 'https://www.youtube.com/embed/' + youtube
+      embedCode = <iframe width="100%" height="265" src={linkYT}></iframe>
+      contentType = 'YouTube video'
+   } else if (props.link.includes('twitter') || props.link.includes('x.com')) {
+      const tweetId = props.link.split('/').pop() || ''
+      embedCode = (
+         <div style={{ width: '100%', height: '465px', overflow: 'hidden', position: 'relative' }}>
+            <div style={{ position: 'absolute', top: '-40%', left: '50%', transform: 'translateX(-50%)', width: '100%' }}>
+               <TwitterTweetEmbed tweetId={tweetId} options={{ width: '100%' }} />
+            </div>
+         </div>
+      )
+      contentType = 'Twitter (X) post'
+   } else {
+      contentType = 'Unknown content type'
+   }
 
-      fetchLatestVideos();
-   }, []);
+   if (linkname != undefined) {
+      var titleURL =
+         '/news/' +
+         linkname.replaceAll(' ', '-') +
+         '?id=' +
+         props.id +
+         '&cat=' +
+         cate
+   } else {
+      var titleURL = '/news/' + linkname + '?id=' + props.id + '?cat=' + cate
+   }
 
    return (
-      <Box>
-         {videos.map((video) => (
-            <Box key={video.id} boxShadow={'2xl'} rounded={'md'} p={6} overflow={'hidden'}>
-               <Box bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'}>
-                  <iframe
-                     width="100%"
-                     height="265"
-                     src={`https://www.youtube.com/embed/${video.id}`}
-                     frameBorder="0"
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                     allowFullScreen
-                  ></iframe>
-               </Box>
-               <Stack>
-                  <Heading as="h3" fontSize="xl">
-                     {video.title}
-                  </Heading>
-                  <Text>{video.description?.substring(0, 150)}</Text>
-               </Stack>
-            </Box>
-         ))}
+      <Box
+         boxShadow={'2xl'}
+         rounded={'md'}
+         p={6}
+         overflow={'hidden'}
+         id={props.id}
+      >
+         <Box bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'}>
+            {embedCode}
+         </Box>
+         <HStack mb={3} spacing={1}>
+            {props.tagsOriginal != '' &&
+               props.tagsOriginal
+                  ?.split(',')
+                  .reverse()
+                  .slice(-2)
+                  .map((tag) => (
+                     <Link href={`/categoria/${tag}`} key={tag}>
+                        <a>
+                           <Tag size="sm" variant="solid">
+                              {tag}
+                           </Tag>
+                        </a>
+                     </Link>
+                  ))}
+         </HStack>
+         <Stack>
+            <Heading as="h3" fontSize="xl">
+               {props?.title}
+            </Heading>
+            {<Text>{props.summary?.substring(0, 150)}</Text>}
+         </Stack>
+         <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
+            {props.space.id == '12332' ? (
+               <Avatar src={ipfsContent.ipfsURL + props.space?.image} />
+            ) : (
+               <Avatar
+                  src={
+                     ipfsContent.ipfsURL +
+                     props.ownedByAccount.profileSpace?.image
+                  }
+               />
+            )}
+            <Stack direction={'column'} spacing={0} fontSize={'sm'}>
+               {props.space.id == '12332' ? (
+                  <Text>Polkadot Arena</Text>
+               ) : (
+                  <Text fontWeight={600}>
+                     {props.ownedByAccount.profileSpace?.name}
+                  </Text>
+               )}
+               <Text color={'gray.500'}>{date.toLocaleDateString()}</Text>
+            </Stack>
+         </Stack>
       </Box>
-   );
-};
+   )
+}
 
-export default CardComponentVideo;
+export default CardComponentVideo
