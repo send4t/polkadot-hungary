@@ -121,6 +121,9 @@ function About({
                </Text>
                <br />
                <Text>
+               Megosztanád másokkal is a Polkadotról tanultakat?  Töltsd le a Polkadot magyar nyelvű információs kiskönyvét, nyomtasd ki, vagy csak küldd tovább olyanoknak, akiknek ezt a technológiát szívesen megmutatnád!
+               </Text>
+               <Text>
                   Terveink között szerepel, hogy bárki küldhessen nekünk eredeti cikket vagy fordítást és a szerkesztőség döntése alapján publikáljuk ezeket. Jelenleg nem tudunk semmilyen juttatást garantálni, mivel a projekt még a kezdeti szakaszban van és önkéntes alapon működik. Jövőben lehet, hogy on-chain jutalmakat is kiosztunk közösséget építő tagjaink számára.
                </Text>
                <Heading as="h2" fontSize="xl" pb={6}>
