@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 import {
    Box,
    Heading,
@@ -8,58 +8,64 @@ import {
    Avatar,
    Tag,
    HStack,
-   Code,
-} from '@chakra-ui/react'
-import { TwitterTweetEmbed } from 'react-twitter-embed'
-import ipfsContent from '../../ipfs'
+} from '@chakra-ui/react';
+import { TwitterTweetEmbed } from 'react-twitter-embed';
+import ipfsContent from '../../ipfs';
 
 export interface ITcardVideo {
-   id: string
-   createdAtTime: number
-   image: string
-   title: string
-   downvotesCount: number
-   summary: string
-   tagsOriginal: string
-   link: string
+   id: string;
+   createdAtTime: number;
+   image: string;
+   title: string;
+   downvotesCount: number;
+   summary: string;
+   tagsOriginal: string;
+   link: string;
    ownedByAccount: {
       profileSpace: {
-         name: string
-         image: string
-      }
-   }
+         name: string;
+         image: string;
+      };
+   };
    space: {
-      id: string
-      name: string
-      image: string
-   }
+      id: string;
+      name: string;
+      image: string;
+   };
 }
 
 const CardComponentVideo: React.FC<ITcardVideo> = (props) => {
-   const date = new Date(props?.createdAtTime)
-   let linkname = props.title
-   let cate = props.tagsOriginal?.split(',').reverse().slice(-1)
+   const date = new Date(props?.createdAtTime);
+   let linkname = props.title;
+   let cate = props.tagsOriginal?.split(',').reverse().slice(-1);
 
-   let embedCode
-   let contentType
+   let embedCode;
+   let contentType;
 
-   if (props.link.includes('youtube')) {
-      const youtube = props.link?.substring(props.link?.lastIndexOf('/') + 1)
-      const linkYT = 'https://www.youtube.com/embed/' + youtube
-      embedCode = <iframe width="100%" height="265" src={linkYT}></iframe>
-      contentType = 'YouTube video'
+   if (props.link.includes('youtube') || props.link.includes('youtu.be')) {
+      let videoId;
+      if (props.link.includes('v=')) {
+         videoId = new URLSearchParams(new URL(props.link).search).get('v');
+      } else if (props.link.includes('youtu.be')) {
+         videoId = props.link.split('/').pop();
+      } else {
+         videoId = props.link?.substring(props.link?.lastIndexOf('/') + 1);
+      }
+      const linkYT = 'https://www.youtube.com/embed/' + videoId;
+      embedCode = <iframe width="100%" height="265" src={linkYT} frameBorder="0" allowFullScreen></iframe>;
+      contentType = 'YouTube video';
    } else if (props.link.includes('twitter') || props.link.includes('x.com')) {
-      const tweetId = props.link.split('/').pop() || ''
+      const tweetId = props.link.split('/').pop() || '';
       embedCode = (
          <div style={{ width: '100%', height: '465px', overflow: 'hidden', position: 'relative' }}>
             <div style={{ position: 'absolute', top: '-40%', left: '50%', transform: 'translateX(-50%)', width: '100%' }}>
                <TwitterTweetEmbed tweetId={tweetId} options={{ width: '100%' }} />
             </div>
          </div>
-      )
-      contentType = 'Twitter (X) post'
+      );
+      contentType = 'Twitter (X) post';
    } else {
-      contentType = 'Unknown content type'
+      contentType = 'Unknown content type';
    }
 
    if (linkname != undefined) {
@@ -69,9 +75,9 @@ const CardComponentVideo: React.FC<ITcardVideo> = (props) => {
          '?id=' +
          props.id +
          '&cat=' +
-         cate
+         cate;
    } else {
-      var titleURL = '/news/' + linkname + '?id=' + props.id + '?cat=' + cate
+      var titleURL = '/news/' + linkname + '?id=' + props.id + '?cat=' + cate;
    }
 
    return (
@@ -108,7 +114,7 @@ const CardComponentVideo: React.FC<ITcardVideo> = (props) => {
             {<Text>{props.summary?.substring(0, 150)}</Text>}
          </Stack>
          <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
-            {props.space.id == '12332' ? (
+            {props.space.id == '9908' ? (
                <Avatar src={ipfsContent.ipfsURL + props.space?.image} />
             ) : (
                <Avatar
@@ -119,8 +125,8 @@ const CardComponentVideo: React.FC<ITcardVideo> = (props) => {
                />
             )}
             <Stack direction={'column'} spacing={0} fontSize={'sm'}>
-               {props.space.id == '12332' ? (
-                  <Text>Polkadot Arena</Text>
+               {props.space.id == '9908' ? (
+                  <Text>Polkadot Hungary Community</Text>
                ) : (
                   <Text fontWeight={600}>
                      {props.ownedByAccount.profileSpace?.name}
@@ -130,7 +136,7 @@ const CardComponentVideo: React.FC<ITcardVideo> = (props) => {
             </Stack>
          </Stack>
       </Box>
-   )
+   );
 }
 
-export default CardComponentVideo
+export default CardComponentVideo;

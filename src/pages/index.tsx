@@ -212,10 +212,10 @@ function Home({
    >
       <Box mb={6}>
          <Heading as="h2" mb={6}>
-            Legfrissebb Kusamarian videók
+            Legfrissebb Polkadot Hungary Community videók
          </Heading>
          <Text>
-            Legyél naprakész a Kusamarian videóival 
+            Legyél naprakész a videóinkkal 
          </Text>
          <Box pt={6}>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>

@@ -1,7 +1,7 @@
 
 const polkadotHu = '11025' //Polkadot Hungary space
 const wmWeekly = '6111'    //WagMedia Weekly news https://grillapp.net/6111
-const kusamarian = '4809'
+const kusamarian = '9908' //Vonyi's space
 const dotleap = '1040'
 const alex = '10324'
 const astraIta = '11056'
