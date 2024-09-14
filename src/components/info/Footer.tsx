@@ -66,7 +66,7 @@ export default function Footer() {
                         A Polkadot Hungary Community teljes mértékben önkéntes alapon működik, ezért minden szponorációt vagy támogatást szívesen fogadunk.
                      </Text>
                      <code>
-                        DOT: 12pzUmpZrXmfjSjRksWrKZkD8jf6UXZXWTkhmA4ccR1Seppv
+                        DOT: 13z9CiETVYCrxz3cghDuTyRGbaYQrwSyRnRcJX5iFbXvrwhT
                      </code>
                   </Box>
                </GridItem>
