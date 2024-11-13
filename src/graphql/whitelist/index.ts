@@ -39,7 +39,7 @@ export const polkadotHuSpace = [polkadotHu]
 export const wagMediaSpace = [wmWeekly]
 export const kusamarianSpace = [kusamarian]
 export const dotleapSpace = [dotleap]
-export const highPostSpace = ['37463'] //highlighted article on main page
+export const highPostSpace = ['222963'] //highlighted article on main page
 export const allSpaces = [
    '2425',
    '5598',
