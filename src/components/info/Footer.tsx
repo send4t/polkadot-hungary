@@ -63,7 +63,7 @@ export default function Footer() {
                         Támogasd munkánkat
                      </Heading>
                      <Text>
-                        A Polkadot Hungary Community teljes mértékben önkéntes alapon működik, ezért minden szponorációt vagy támogatást szívesen fogadunk.
+                        A Polkadot Hungary Community teljes mértékben önkéntes alapon működik, ezért minden szponzorációt vagy támogatást szívesen fogadunk.
                      </Text>
                      <code>
                         DOT: 13z9CiETVYCrxz3cghDuTyRGbaYQrwSyRnRcJX5iFbXvrwhT
