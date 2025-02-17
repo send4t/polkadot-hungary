@@ -82,7 +82,7 @@ function Home({
          />
          <Nav />
          <main>
-            <<SimpleGrid px={{ base: 0, md: 32 }} py={20} spacing={10}>
+            <SimpleGrid px={{ base: 0, md: 32 }} py={20} spacing={10}>
     <Box>
       <Heading as="h1" size={{ base: '2xl', md: '4xl' }}>
         Üdvözöl
