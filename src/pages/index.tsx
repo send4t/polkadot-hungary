@@ -1,4 +1,5 @@
 import type { GetServerSideProps, InferGetStaticPropsType } from 'next'
+import { useBreakpointValue } from '@chakra-ui/react';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import {
@@ -58,7 +59,8 @@ function Home({
 }: InferGetStaticPropsType<typeof getServerSideProps>) {
    let router = useRouter()
 
-   const backgroundBox = useColorModeValue('gray.100', 'gray.900')
+   const backgroundBox = useColorModeValue('gray.100', 'gray.900');
+    const iframeHeight = useBreakpointValue({ base: "300", md: "400" });
 
    if (router.isFallback) {
       return (
@@ -98,21 +100,18 @@ function Home({
 
     {/* Calendar Box */}
     <Box textAlign="right" mt={{ base: 6, md: 0 }}>
-     <iframe
-  src="https://lu.ma/embed/calendar/cal-7auh9QJGWDn9inH/events"
-  width="100%"
-  height={useBreakpointValue({ base: "300", md: "400" })}
-  frameBorder="0"
-  style={{
-    border: "1px solid #bfcbda88",
-    borderRadius: "4px",
-  }}
-  allowFullScreen
-  aria-hidden="false"
-  tabIndex={0}
-/>
-    </Box>
-  </SimpleGrid>
+                  <iframe
+                     src="https://lu.ma/embed/calendar/cal-7auh9QJGWDn9inH/events"
+                     width="100%"
+                     height={iframeHeight} // Using the hook value correctly
+                     frameBorder="0"
+                     style={{ border: "1px solid #bfcbda88", borderRadius: "4px" }}
+                     allowFullScreen
+                     aria-hidden="false"
+                     tabIndex={0}
+                  />
+               </Box>
+            </SimpleGrid>
 
             <Grid
                templateColumns="repeat(12, 1fr)"
