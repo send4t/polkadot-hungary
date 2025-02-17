@@ -106,7 +106,7 @@ function Home({
         style={{ border: "1px solid #bfcbda88", borderRadius: "4px" }}
         allowFullScreen
         aria-hidden="false"
-        tabIndex="0"
+        tabIndex={0}
       ></iframe>
     </Box>
   </SimpleGrid>
