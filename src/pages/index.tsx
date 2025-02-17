@@ -82,20 +82,34 @@ function Home({
          />
          <Nav />
          <main>
-            <SimpleGrid px={{base:0, md: 32}} py={20}>
-               <Box>
-                  <Heading as="h1" size={{ base: '2xl', md: '4xl' }}>
-                     Üdvözöl
-                     <br />
-                     a Polkadot Hungary
-                  </Heading>
-                  <Box pt={3}>
-                     <Text>
-                      Egy oldal magyarul a Polkadotról és Kusamaról, hírekkel, frissítésekkel, pletykákkal, videókkal és fordításokkal.
-                     </Text>
-                  </Box>
-               </Box>
-            </SimpleGrid>
+            <<SimpleGrid px={{ base: 0, md: 32 }} py={20} spacing={10}>
+    <Box>
+      <Heading as="h1" size={{ base: '2xl', md: '4xl' }}>
+        Üdvözöl
+        <br />
+        a Polkadot Hungary
+      </Heading>
+      <Box pt={3}>
+        <Text>
+          Egy oldal magyarul a Polkadotról és Kusamaról, hírekkel, frissítésekkel, pletykákkal, videókkal és fordításokkal.
+        </Text>
+      </Box>
+    </Box>
+
+    {/* Calendar Box */}
+    <Box textAlign="right" mt={{ base: 6, md: 0 }}>
+      <iframe
+        src="https://lu.ma/embed/calendar/cal-7auh9QJGWDn9inH/events"
+        width="100%"
+        height="300"
+        frameBorder="0"
+        style={{ border: "1px solid #bfcbda88", borderRadius: "4px" }}
+        allowFullScreen
+        aria-hidden="false"
+        tabIndex="0"
+      ></iframe>
+    </Box>
+  </SimpleGrid>
 
             <Grid
                templateColumns="repeat(12, 1fr)"
