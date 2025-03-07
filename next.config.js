@@ -6,9 +6,9 @@ const nextConfig = {
     domains: ['gateway.ipfs.io'],
   },
   i18n: {
-    locales: ["it-IT"],
-    defaultLocale: "it-IT"
-  },
+    locales: ["hu-HU"],
+    defaultLocale: "hu-HU"
+},
 }
 
 module.exports = nextConfig
