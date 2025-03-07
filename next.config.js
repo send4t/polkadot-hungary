@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['cloudflare-ipfs.com'],
+    domains: ['gateway.ipfs.io'],
   },
   i18n: {
     locales: ["hu-HU"],
