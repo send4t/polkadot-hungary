@@ -105,23 +105,7 @@ function Home({
     </Box>
   </Box>
 
-  {/* Calendar Box - Removed margin-top adjustment */}
-  <Box textAlign="right" height="100%">
-    <iframe
-      src="https://lu.ma/embed/calendar/cal-7auh9QJGWDn9inH/events"
-      width="100%"
-      height={iframeHeight}
-      frameBorder="0"
-      style={{ 
-        border: "1px solid #bfcbda88", 
-        borderRadius: "4px",
-        minHeight: "300px" // Ensures minimum height on all screens
-      }}
-      allowFullScreen
-      aria-hidden="false"
-      tabIndex={0}
-    />
-  </Box>
+
 </SimpleGrid>
 
             <Grid
