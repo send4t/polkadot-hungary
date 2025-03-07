@@ -31,14 +31,11 @@ jobs:
       - name: Install step
         run: "npm install"
 
-      - name: Build step
-        run: "npm run build"
-
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "send4t-polkadot-hu-89"
           entrypoint: "jsr:@deno/nextjs-start"
           root: "."
-          include: .next, public
+          
           
