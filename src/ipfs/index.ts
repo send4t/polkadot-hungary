@@ -1,5 +1,5 @@
 const ipfsContent = {
-   ipfsURL: 'https://cloudflare-ipfs.com/ipfs/',
+   ipfsURL: 'https://gateway.ipfs.io/ipfs/',
 }
 
 export default ipfsContent
